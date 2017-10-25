@@ -1,15 +1,22 @@
+/*color: #997750*/
+
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
-body{margin: 0;
+p{
+	padding: 10px 0px;
+}
+
+body{
+	margin: 0;
 	padding: 0;
 	background:#F8931F;
 	background-attachment: fixed;
 	font-family: Roboto, sans-serif;
 }
-
-
 
 .row::after {
     content: "";
@@ -24,11 +31,15 @@ body{margin: 0;
 
 .Container{
 	float: left;
-	min-height: 300px;
+	max-height: 250px;
 	margin:0;
 	padding: 0;
 	text-align: center;
-	line-height: 0;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+	outline: 1px solid #F8931F;
+	outline-offset: -1px;
 }
 
 .logo{
@@ -37,16 +48,20 @@ body{margin: 0;
 	background-repeat: no-repeat;
 	background-position: center center;
 	width:100%;
+	min-height:200px;
+	max-height:300px;
+}
+
+.profile{
+	width:300px;
+	float:right;
 }
 
 .about{
-	background-image: url("../img/profile2.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #997750;
+	min-height:250px;
 }
 .works{
+	min-height:74px;
 	background-image: url("../img/aboutbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -55,6 +70,7 @@ body{margin: 0;
 }
 
 .personal{
+	min-height:74px;
 	background-image: url("../img/side_table.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -63,6 +79,7 @@ body{margin: 0;
 }
 
 .university{
+	min-height:74px;
 	background-image: url(../img/lamp.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -71,6 +88,7 @@ body{margin: 0;
 }
 
 .uni_project{
+	min-height:74px;
 	height: 250px;
 	background-color: #eee;
 }
@@ -92,8 +110,11 @@ body{margin: 0;
 }
 
 .title{
-	width: 300px;
+	min-height: 250px;
+	width: 100%;
 	text-align: center;
+	font-size:25px;
+	color: #fff;
 }
 
 
@@ -108,12 +129,8 @@ body{margin: 0;
 }
 
 #title{
-	font-size: 50px;
-	color:#000;
-}
-
-h1.#subtitle{
-	position: 0px 400px;
+	font-size: 20px;
+	color:#ffffff;
 }
 
 ul{
@@ -144,6 +161,15 @@ body{margin: 0;}
 
 .logo{
 	background-size: contain;}
+
+.profile{
+	width:100%;
+}
+
+#subtitle{
+	display:none;
+}
+
 	}
 
 
@@ -152,8 +178,6 @@ body{margin: 0;}
 @media only screen and (min-width: 1000px) {
 
 body{margin: 0 8.33%;}
-
-.Container{min-height:250px;}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -169,10 +193,10 @@ body{margin: 0 8.33%;}
 .col-12 {width: 100%;}
 
 .logo{
-	min-height: 200px;
-	height:200px;
-	margin-right: 66.66%;
+	min-height: 250px;
+	height:250px;
 	background-size: contain;
+	background-position: top left;
 }
 
 .about, .works, .personal, .university{
@@ -185,8 +209,12 @@ body{margin: 0 8.33%;}
 	}
 
 #title{
-	color:#000;
+	color:#ffffff;
 	}
+
+.title{
+	display: none;
+}
 
 .Container.contact{
 	padding:0;
@@ -194,6 +222,5 @@ body{margin: 0 8.33%;}
 	min-height:150px;
 	height:150px;
 }
-
 
 }
