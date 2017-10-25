@@ -53,7 +53,7 @@ body{
 }
 
 .profile{
-	width:300px;
+	width:300px;;
 	float:right;
 }
 
@@ -62,33 +62,25 @@ body{
 }
 .works{
 	min-height:74px;
-	background-image: url("../img/aboutbg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right top;
+	padding: 25px;
 	background-color: #FF5620;	
 }
 
 .personal{
 	min-height:74px;
-	background-image: url("../img/side_table.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right top;
+	padding: 25px;
 	background-color: #60FFAB;	
 }
 
 .university{
 	min-height:74px;
-	background-image: url(../img/lamp.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right top;
+	padding: 25px;
 	background-color: #05CC2B;
 }
 
 .uni_project{
 	min-height:74px;
+	padding: 25px;
 	height: 250px;
 	background-color: #eee;
 }
@@ -142,7 +134,7 @@ li{
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 body{margin: 0;}
 
@@ -163,7 +155,7 @@ body{margin: 0;}
 	background-size: contain;}
 
 .profile{
-	width:100%;
+	width:316px;
 }
 
 #subtitle{
@@ -175,7 +167,7 @@ body{margin: 0;}
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 600px) {
 
 body{margin: 0 8.33%;}
 
