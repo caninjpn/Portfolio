@@ -18,30 +18,13 @@ body{
 	font-family: Roboto, sans-serif;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-	width: 100%;
-    float: left;
-    padding: 0px;
+div{
+	border: 1px solid #000;
 }
 
-.Container{
-	float: left;
-	max-height: 250px;
-	margin:0;
-	padding: 0;
-	text-align: center;
-	line-height: 1;
-	position: relative;
-	overflow: hidden;
-	outline: 1px solid #F8931F;
-	outline-offset: -1px;
+.container{
+	min-width: 90%;
 }
-
 .logo{
 	background-image: url("../img/logo.jpg");
 	background-size: contain;
@@ -53,166 +36,16 @@ body{
 }
 
 .profile{
-	width:300px;;
-	float:right;
-}
-
-.about{
-	min-height:250px;
-}
-.works{
-	min-height:74px;
-	padding: 25px;
-	background-color: #FF5620;	
-}
-
-.personal{
-	min-height:74px;
-	padding: 25px;
-	background-color: #60FFAB;	
-}
-
-.university{
-	min-height:74px;
-	padding: 25px;
-	background-color: #05CC2B;
-}
-
-.uni_project{
-	min-height:74px;
-	padding: 25px;
-	height: 250px;
-	background-color: #eee;
-}
-
-.glow{
-	background-image: url(../img/glow.jpg);
-	background-size: cover;
-}
-
-.music_hand{
-	background-image: url(../img/music_hand.jpg);
-	background-size: cover;
-}
-
-.bully{
-	background-image: url(../img/bully.jpg);
-	background-size: cover;
-	background-position: bottom right;
-}
-
-.title{
-	min-height: 250px;
 	width: 100%;
-	text-align: center;
-	font-size:25px;
-	color: #fff;
 }
 
-
-.icon{
-	width:100px;
-}
-
-#logo {
-	width:300px;
-	height: 300px;
-	float: left;
-}
-
-#title{
+.nav{
 	font-size: 20px;
-	color:#ffffff;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
 }
 
-ul{
-	padding:0 8.33%;
-}
-li{
-	display: inline-block;
-	list-style-type: none;
-}
-
-
-@media only screen and (max-width: 600px) {
-
-body{margin: 0;}
-
-.col-m-1 {width: 8.33%;}
-.col-m-2 {width: 16.66%;}
-.col-m-3 {width: 25%;}
-.col-m-4 {width: 33.33%;}
-.col-m-5 {width: 41.66%;}
-.col-m-6 {width: 50%;}
-.col-m-7 {width: 58.33%;}
-.col-m-8 {width: 66.66%;}
-.col-m-9 {width: 75%;}
-.col-m-10 {width: 83.33%;}
-.col-m-11 {width: 91.66%;}
-.col-m-12 {width: 100%;}
-
-.logo{
-	background-size: contain;}
-
-.profile{
-	width:316px;
-}
-
-#subtitle{
-	display:none;
-}
-
-	}
-
-
-
-
-@media only screen and (min-width: 600px) {
-
-body{margin: 0 8.33%;}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.logo{
-	min-height: 250px;
-	height:250px;
-	background-size: contain;
-	background-position: top left;
-}
-
-.about, .works, .personal, .university{
-	min-height: 250px;
-	height:250px;
-	background-size: 550px;
-	background-position: right center;
-	padding:20px;
-	text-align: left;
-	}
-
-#title{
-	color:#ffffff;
-	}
-
-.title{
-	display: none;
-}
-
-.Container.contact{
-	padding:0;
-	width: 100%;
-	min-height:150px;
-	height:150px;
-}
-
+img.icon{
+	height:75px;
 }
