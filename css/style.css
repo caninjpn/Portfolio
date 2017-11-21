@@ -53,7 +53,7 @@ div{
 }
 
 .navi{
-	height:20px;
+	height:30px;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
@@ -62,8 +62,13 @@ div{
 
 .txt{
 	border: solid 1px #ffffff;
-	padding:10px;
+	padding:5px;
 	width:200px;
+}
+
+.txt a{
+	font-size:.8em;
+	color: #fff;
 }
 
 img.icon{
@@ -98,10 +103,18 @@ img.project{
 	height:300px;
     }
     .navi{
+    	height:40px;
     	margin:0;
     	border: 1px solid #fff;
+    	background-color:#CC7919;
     	font-size:1.3em;
-    	height:40px;
+    }
+    .txt{
+    	border: none;
+    	width:50%;
+    }
+    .txt a, p, h6{
+    	padding: 0;
     }
 }
 
