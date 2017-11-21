@@ -62,7 +62,8 @@ div{
 
 .txt{
 	border: solid 1px #ffffff;
-	padding:5px;
+	padding:10px;
+	width:200px;
 }
 
 img.icon{
