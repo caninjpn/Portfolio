@@ -4,9 +4,7 @@
 	padding:0;
 }
 
-.row{
-		padding: 10px 0;
-	}
+.row{padding: 10px 0;}
 
 * {
     box-sizing: border-box;
@@ -93,15 +91,19 @@ img.project{
 	p{
 		padding: 5px 5px;
 		text-align: left;
+		font-size:.9em;
 	}
-	.logo{
-		min-height:100px;
-	}
+
+	h6 {font-size:.9em;}
+	.topnav {padding:0px;}
+	.logo {min-height:100px;}
+
     .profile {
-    background-position:center center;
-	min-width:200px;
-	height:300px;
+	    background-position:center center;
+		min-width:200px;
+		height:300px;
     }
+
     .navi{
     	height:40px;
     	margin:0;
@@ -113,9 +115,7 @@ img.project{
     	border: none;
     	width:50%;
     }
-    .txt a, p, h6{
-    	padding: 0;
-    }
+    .txt a, p, h6{padding: 0;}
 }
 
 .collapse {
