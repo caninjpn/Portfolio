@@ -4,21 +4,21 @@
 	padding:0;
 }
 
-.row{padding: 10px 0;}
+.row { padding: 10px 0; }
 
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
-h6{font-weight: bold;}
-p{padding: 0px 0px;}
+h6 { font-weight: bold; }
+p { padding: 0px 0px; }
 
-body{
+body {
 	margin: 0;
 	padding: 0;
-	background:#F8931F;
+	background: #F8931F;
 	background-attachment: fixed;
 	font-family: Roboto, sans-serif;
 }
@@ -27,104 +27,66 @@ div{
 	/*border: 1px solid #000; */
 }
 
-.container{
+.container {
 	min-width: 90%;
 }
-.logo{
+
+.logo {
 	background-image: url("../img/logo.jpg");
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width:100%;
-	min-height:200px;
-	max-height:300px;
+	width: 100%;
+	min-height: 200px;
+	max-height: 300px;
 }
 
-.profile{
-	min-width:200px;
+.profile {
+	min-width: 200px;
 	width: 100%;
-	background-image:url("../img/profile2.jpg");
+	background-image: url("../img/profile2.jpg");
 	background-position: center center;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
-
 }
 
-.navi{
-	height:30px;
+.navi {
+	height: 30px;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
 	color: #ffffff;
 }
 
-.txt{
+.txt {
 	border: solid 1px #ffffff;
-	padding:5px;
-	width:200px;
+	padding: 5px;
+	width: 200px;
 }
 
-.txt a{
-	font-size:.8em;
+.txt a {
+	font-size: .8em;
 	color: #fff;
 }
 
-img.icon{
-	height:75px;
+img.icon {
+	height: 75px;
 }
 
-img.project{
-	width:100%;
-	background-color:#eeeeee;
-}
-
-@media only screen and (max-width: 1200px) {
-	.container{
-	min-width: 100%;
-}
-	.logo{
-		min-width:100%;
-	
-}
-
-@media only screen and (max-width: 762px) {
-	p{
-		padding: 5px 5px;
-		text-align: left;
-		font-size:.9em;
-	}
-
-	h6 {font-size:.9em;}
-	.topnav {padding:0px;}
-	.logo {min-height:100px;}
-
-    .profile {
-	    background-position:center center;
-		min-width:200px;
-		height:300px;
-    }
-
-    .navi{
-    	height:40px;
-    	margin:0;
-    	border: 1px solid #fff;
-    	background-color:#CC7919;
-    	font-size:1.3em;
-    }
-    .txt{
-    	border: none;
-    	width:50%;
-    }
-    .txt a, p, h6{padding: 0;}
+img.project {
+	width: 100%;
+	background-color: #eeeeee;
 }
 
 .collapse {
   visibility: hidden;
 }
+
 .collapse.show {
   visibility: visible;
   display: block;
 }
+
 .collapsing {
   position: relative;
   height: 0;
