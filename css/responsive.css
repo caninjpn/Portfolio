@@ -1,4 +1,13 @@
+.prj-desc {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 762px) {
+  .prj-desc {
+    visibility: visible;
+    display: block;
+  }
+
   p {
     padding: 5px 5px;
     text-align: left;
