@@ -96,7 +96,8 @@ input[type="radio"] {
 input[type="radio"][id="works"]:checked + label {
   color:#F8931F;
 }
-input[type="radio"][id="works"]:checked ~ .academics, input[type="radio"][id="works"]:checked ~ .personal {
+input[type="radio"][id="works"]:checked ~ .academics, input[type="radio"][id="works"]:checked ~ .personal, input[type="radio"][id="works"]:checked ~ .contact{
+	position:absolute;
   width:0;
   height:0;
   padding:0;
@@ -106,7 +107,8 @@ input[type="radio"][id="works"]:checked ~ .academics, input[type="radio"][id="wo
 input[type="radio"][id="academics"]:checked + label {
   color:#F8931F;
 }
-input[type="radio"][id="academics"]:checked ~ .works, input[type="radio"][id="academics"]:checked ~ .personal {
+input[type="radio"][id="academics"]:checked ~ .works, input[type="radio"][id="academics"]:checked ~ .personal, input[type="radio"][id="works"]:checked ~ .contact {
+  position:absolute;
   width:0;
   height:0;
   padding:0;
@@ -116,7 +118,8 @@ input[type="radio"][id="academics"]:checked ~ .works, input[type="radio"][id="ac
 input[type="radio"][id="personal"]:checked + label {
   color:#F8931F;
 }
-input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="personal"]:checked ~ .academics {
+input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="personal"]:checked ~ .academics, input[type="radio"][id="works"]:checked ~ .contact{
+  position:absolute;
   width:0;
   height:0;
   padding:0;
@@ -139,7 +142,8 @@ input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="per
 	}
 
 .tile{
-	margin:1%;
+	position:relative;
+	margin:.5%;
 	width:31%;
 	height:200px;
 	overflow: hidden;
@@ -166,7 +170,6 @@ input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="per
 	position: relative;
 	bottom:200px;
 	width: 100%;
-	height:200px;
 	opacity:0;
 	transition: opacity 1.5s;
 	background-color: rgba(255,255,255,.9);
