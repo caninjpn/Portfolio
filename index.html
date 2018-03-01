@@ -19,14 +19,12 @@
 									<h1>Kevin Wong</h1>
 							</div>
 							<div class="nav">
-								<ul>
-									<li><a class="card-filter" data-filter="all"  href="#" role="button">All</a></li>
-									<li><a class="card-filter" data-filter="works" href="#" role="button">Works</a></li>
-									<li><a class="card-filter" data-filter="academic" href="#" role="button">Academic</a></li>
-									<li><a class="card-filter" data-filter="personal" href="#" role="button">Personal</a></li>
-									<li><a class="card-filter" data-filter="contact" href="#" role="button">Contact</a></li>
-								</ul> 
-						</div>
+								<label for="all">All </label>
+								<label for="works">Works </label>
+								<label for="academics">Academic </label>
+								<label for="personal">Personal </label>
+								<label for="contact">Contact </label>
+							</div>
 						</div>
 					<div class="hero">
 						<div class="motto">
@@ -37,9 +35,15 @@
 					</div>
 
 			<div class="cards-section">
-				<div class="card" data-filter="works">
+				<input type="radio" id="all" name="type" >
+								<input type="radio" id="works" name="type" >
+								<input type="radio" id="academics" name="type" >
+								<input type="radio" id="personal" name="type" >
+								<input type="radio" id="contact" name="type" >
+								
+				<div class="tile works">
 						<div class="bottom_layer">
-							<img class="card_img" src="img/Cutter/SliceDice.png">
+							<img class="cards_img" src="img/Cutter/SliceDice.png">
 						</div>
 						<div class="top_layer">
 							<div class="text">
@@ -52,23 +56,23 @@
 						</div>
 				</div>
 
-				<div class="card" data-filter="works">
+				<div class="tile works">
 						<div class="bottom_layer">
-							<img class="card_img" src="img/PGC/Gift Card Top_PC_new.png">
+							<img class="cards_img" src="img/PGC/Gift Card Top_PC_new.png">
 						</div>
 						<div class="top_layer">
 							<div class="text">
-								<h2>Rakuten Point Gift Card Redesign</h2>
+								<h2>Rakuten Point Gift cards Redesign</h2>
 
 								<h4>Works</h4>
-								<p>Redesign of the Rakuten Point Gift Card</p>
+								<p>Redesign of the Rakuten Point Gift cards</p>
 								<a href="http://www.google.com"> See more</a>
 							</div>
 						</div>
 				</div>
-				<div class="card" data-filter="Personal">
+				<div class="tile personal">
 						<div class="bottom_layer">
-							<img class="card_img" src="img/Elder/ElderTop.png">
+							<img class="cards_img" src="img/Elder/ElderTop.png">
 						</div>
 						<div class="top_layer">
 							<div class="text">
@@ -81,9 +85,9 @@
 						</div>
 					</div>
 
-				<div class="card" data-filter="Works">
+				<div class="tile works">
 						<div class="bottom_layer">
-							<img class="card_img" src="img/DLM/Desktop.png">
+							<img class="cards_img" src="img/DLM/Desktop.png">
 						</div>
 						<div class="top_layer">
 							<div class="text">
@@ -95,9 +99,9 @@
 							</div>
 						</div>
 				</div>
-				<div class="card Personal">
+				<div class="tile personal">
 						<div class="bottom_layer">
-							<img class="card_img" src="img/Transform_Space.png">
+							<img class="cards_img" src="img/Transform_Space.png">
 						</div>
 						<div class="top_layer">
 							<div class="text">
@@ -110,8 +114,8 @@
 						</div>
 					</div>
 
-					<div class="card Personal">
-						<div class="bottom_layer"><img class="card_img" src="img/side_table.png"></div>
+					<div class="tile personal">
+						<div class="bottom_layer"><img class="cards_img" src="img/side_table.png"></div>
 						<div class="top_layer">
 							<div class="text">
 								<h2>IKEA add-on</h2>
@@ -122,8 +126,8 @@
 							</div>
 						</div>
 					</div>   
-					<div class="card Academic">
-						<div class="bottom_layer"><img class="card_img" src="img/Ant Lion.png"></div>
+					<div class="tile academic">
+						<div class="bottom_layer"><img class="cards_img" src="img/Ant Lion.png"></div>
 						<div class="top_layer">
 							<div class="text">
 								<h2>Ant Lion</h2>
@@ -134,8 +138,8 @@
 							</div>
 						</div>
 					</div>
-				<div class="card Academic">
-						<div class="bottom_layer"><img class="card_img" src="img/Glow.png"></div>
+				<div class="tile academic">
+						<div class="bottom_layer"><img class="cards_img" src="img/Glow.png"></div>
 						<div class="top_layer">
 							<div class="text">
 								<h2>Glow</h2>
@@ -147,8 +151,8 @@
 
 						</div>
 					</div>
-				<div class="card Academic">
-						<div class="bottom_layer"><img class="card_img" src="img/Music_Hand.png"></div>
+				<div class="tile academic">
+						<div class="bottom_layer"><img class="cards_img" src="img/Music_Hand.png"></div>
 						<div class="top_layer">
 							<div class="text">
 								<h2>Music Hand</h2>
@@ -159,8 +163,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="card Academic">
-						<div class="bottom_layer"><img class="card_img" src="img/YDKM.png"></div>
+					<div class="tile Academic">
+						<div class="bottom_layer"><img class="cards_img" src="img/YDKM.png"></div>
 						<div class="top_layer">
 							<div class="text">
 							<h2>You Don't Know Me</h2>
@@ -171,7 +175,7 @@
 							</div>
 						</div>
 					</div>
-				<div class="card Contact" style="padding:5px;">
+				<div class="tile Contact" style="padding:5px;">
 					<h2>Contact:</h2>
 						<h4>Email: <a href="#">wong.cheuk.him.kevin@gmail.com</a></h4>
 					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>

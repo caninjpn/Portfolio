@@ -43,10 +43,10 @@ h2{
 
 li{display: inline-block;}
 
-li a{
+label{
 	font-size: 1.2em;
 	color:#000000;
-	padding:8px;
+	padding: 0 8px;
 	text-decoration: none;
 }
 
@@ -90,30 +90,55 @@ li a{
 	background-repeat: no-repeat;
 	background-position: 0 42px;
 }
-
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"][id="works"]:checked + label {
+  color:#F8931F;
+}
+input[type="radio"][id="works"]:checked ~ .academics, input[type="radio"][id="works"]:checked ~ .personal {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="academics"]:checked + label {
+  color:#F8931F;
+}
+input[type="radio"][id="academics"]:checked ~ .works, input[type="radio"][id="academics"]:checked ~ .personal {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="personal"]:checked + label {
+  color:#F8931F;
+}
+input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="personal"]:checked ~ .academics {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
 .nav{
 	position:fixed;
-	left:65%;
+	float: right;
+	right:1%;
 	margin: 20px 8px 0 0;
 	z-index: 100;
 }
- a:focus[data-filter]{
- 	color:#F8931F;
- }
-
 .motto{
 	width:70%;
-	margin: 10% 20%;
+	margin: 10% 13%;
 	float: left;
 	color:#ffffff;
 	text-align: center;
 	}
 
-.cards-section{
-	margin: 0 auto;
-	width:100%;
-}
-.card{
+.tile{
 	margin:1%;
 	width:31%;
 	height:200px;
@@ -126,14 +151,6 @@ li a{
  	-o-transition:all .8s ease;
  	-ms-transition:all .8s ease;
  	transition:all .8s ease;
-}
-
-.card-filter{}
-
- a[data-filter="works"]:focus ~ div:not([data-filter="works"]){
-  height:0px;
-  width:0px;
-  margin:0;
 }
 
 .card_img{
