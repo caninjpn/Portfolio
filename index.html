@@ -1,131 +1,191 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Kevin Wong - UX Design</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+			<title>Kevin Wong - UX Design</title>
+			<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+		<!-- Required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body onload="checkWidth()">
-  	<div class="container">
-		<div class="row justify-content-center topnav">
-			<div class="col-6 col-sm-3 col-md-2">
-				<p class="navi">Works</p>
-			</div>
-			<div class="col-6 col-sm-3 col-md-2">
-				<p class="navi">Personal</p>
-			</div>
-			<div class="col-6 col-sm-3 col-md-2">
-				<p class="navi">Academics</p>
-			</div>
-			<div class="col-6 col-sm-3 col-md-2">
-				<p class="navi">About</p>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-12 col-lg-2 logo">
-			</div>
-			<div class="col-6 col-md-3 col-lg-2">
-				<a data-toggle="collapse" href="#proj_txt">
-					<img class="project" src="img/glow.jpg">
-				</a>
-			</div>
-			<div id="proj_txt" class="collapse width txt">
-				<div>
-					<h6>Glow</h6>
-					<p>A wireless lamp users control with motion, not switches.</p>
-					<a href="https://www.behance.net/gallery/20881551/GLOW">
-						Glow Behance Page
-					</a>
+		<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body onload="checkWidth()">
+				<div class="main">
+					<div class="top" id="top">
+							<div class="container_logo">
+									<img class="logo" src="img/logo_black.png">
+									<h1>Kevin Wong</h1>
+							</div>
+							<div class="nav">
+								<ul>
+									<li><a class="card-filter" data-filter="all"  href="#" role="button">All</a></li>
+									<li><a class="card-filter" data-filter="works" href="#" role="button">Works</a></li>
+									<li><a class="card-filter" data-filter="academic" href="#" role="button">Academic</a></li>
+									<li><a class="card-filter" data-filter="personal" href="#" role="button">Personal</a></li>
+									<li><a class="card-filter" data-filter="contact" href="#" role="button">Contact</a></li>
+								</ul> 
+						</div>
+						</div>
+					<div class="hero">
+						<div class="motto">
+							<h2>
+									Designing to improve the world physically and digitally.
+							</h2>
+						</div>
+					</div>
+
+			<div class="cards-section">
+				<div class="card" data-filter="works">
+						<div class="bottom_layer">
+							<img class="card_img" src="img/Cutter/SliceDice.png">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Rakuten Point Cutter App Redesign</h2>
+
+								<h4>Works</h4>
+								<p>App Improvement of the Rakuten Cutter App</p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
 				</div>
-			</div>
-			<div class="col-6 col-md-3 col-lg-2">
-				<a data-toggle="collapse" href="#proj_txt2">
-					<img class="project" src="img/music_hand.jpg">
-				</a>
-			</div>
-			<div id="proj_txt2" class="collapse width txt">
-				<div>
-					<h6>Music Hand</h6>
-					<p>You don't just listen to the music, you conduct it.</p>
-					<a href="https://www.behance.net/gallery/20354873/Music-Hand-Sensitive-Skin-Project">
-						Music Hand Behance Page
-					</a>
+
+				<div class="card" data-filter="works">
+						<div class="bottom_layer">
+							<img class="card_img" src="img/PGC/Gift Card Top_PC_new.png">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Rakuten Point Gift Card Redesign</h2>
+
+								<h4>Works</h4>
+								<p>Redesign of the Rakuten Point Gift Card</p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
 				</div>
-			</div>
-			<div class="col-6 col-md-3 col-lg-2">
-				<a data-toggle="collapse" href="#proj_txt3">
-					<img class="project" src="img/shy_jack.png">
-				</a>
-			</div>
-			<div id="proj_txt3" class="collapse width txt">
-				<div>
-					<h6>Shy Jack</h6>
-					<p>Human interaction to recreate a natural animal behaviour using electronics</p>
-					<a href="https://www.behance.net/gallery/19840551/Shy-Jack">
-						Shy Jack Behance Page
-					</a>
+				<div class="card" data-filter="Personal">
+						<div class="bottom_layer">
+							<img class="card_img" src="img/Elder/ElderTop.png">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Elder Phone</h2>
+
+								<h4>Personal</h4>
+								<p>Custom launcher design targeted for elders who are transiting from feature phones to smartphones.</p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>
+
+				<div class="card" data-filter="Works">
+						<div class="bottom_layer">
+							<img class="card_img" src="img/DLM/Desktop.png">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>DLM+</h2>
+
+								<h4>Works</h4>
+								<p>A UI interface design concept for project signups. </p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
 				</div>
-			</div>
-			<div class="col-6 col-md-3 col-lg-2">
-				<a data-toggle="collapse" href="#proj_txt4">
-					<img class="project" src="img/YDKM.jpg">
-				</a>
-			</div>
-			<div id="proj_txt4" class="collapse width txt">
-				<div>
-					<h6>You Don't Know Me</h6>
-					<p>Combining technology and art to create a sculpture to raise awareness on cyber bullyinig.</p>
-					<a href="https://www.behance.net/gallery/20224859/IAT443-Interactive-Video-Video-Sculpture">
-						You Don't Know Me Behance Page
-					</a>
-				</div>
-			</div>
+				<div class="card Personal">
+						<div class="bottom_layer">
+							<img class="card_img" src="img/Transform_Space.png">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>6 J&#333; Room</h2>
+
+								<h4>Personal</h4>
+								<p>Spatial design study of how to make a room feel larger in a Japanese 6 J&#333; (10m<sup>2</sup>) Apartment.</p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card Personal">
+						<div class="bottom_layer"><img class="card_img" src="img/side_table.png"></div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>IKEA add-on</h2>
+
+								<h4>Personal</h4>
+								<p>A side table that hangs off the side of a IKEA bed</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>   
+					<div class="card Academic">
+						<div class="bottom_layer"><img class="card_img" src="img/Ant Lion.png"></div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Ant Lion</h2>
+
+								<h4>Academic</h4>
+								<p>A maze game that is randomly generated with added mechanics to increase the challenge.</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>
+				<div class="card Academic">
+						<div class="bottom_layer"><img class="card_img" src="img/Glow.png"></div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Glow</h2>
+
+								<h4>Academic</h4>
+								<p>A new way to control lighting using human natural movement.</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+
+						</div>
+					</div>
+				<div class="card Academic">
+						<div class="bottom_layer"><img class="card_img" src="img/Music_Hand.png"></div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Music Hand</h2>
+
+								<h4>Academic</h4>
+								<p>Conduct music with your finger.</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="card Academic">
+						<div class="bottom_layer"><img class="card_img" src="img/YDKM.png"></div>
+						<div class="top_layer">
+							<div class="text">
+							<h2>You Don't Know Me</h2>
+
+								<h4>Academic</h4>
+								<p>A project to raise awareness on cyber-bullying.</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+						</div>
+					</div>
+				<div class="card Contact" style="padding:5px;">
+					<h2>Contact:</h2>
+						<h4>Email: <a href="#">wong.cheuk.him.kevin@gmail.com</a></h4>
+					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
+						<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
+					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
+				</div> 
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-12 order-md-12 col-md-2 col-lg-2 profile">
-			</div>
-			<div class="col-12 order-md-1 col-md-6 col-lg-7">
-				<p>As a passionate designer, I have continued to pursue design not just as a career, but as a hobby. During my Academic years I grew with asking the questions and aim to solve the issues that people have in life, and that's what I have been doing since.</p>
-				<p>At home, I constantly look for ways to improve life around me, doing DIY projects to create furnitures and mechanics that could improve my life. At work, I always look for customer needs and do my best to align it with the business needs. When something comes up I try to look at ways I can fix it, if it accommodates with the people around me. I want to share it with the rest of the world.</p>
-				<h6 align="right" style="padding-right: 30px">- Kevin Wong</h6>
-			</div>
-		</div>
-	<div class="row justify-content-center">
-		<div class="col-6 col-md-1 col-sm-3">
-			<a href="https://www.facebook.com/profile.php?id=694115332">
-				<img class="icon" src="img/cflag.jpg" alt="Facebook">
-			</a>
-		</div>
-		<div class="col-6 col-md-1 col-sm-3">
-			<a href="https://www.facebook.com/profile.php?id=694115332">
-				<img class="icon" src="img/cflag.jpg" alt="LinkedIn">
-			</a>
-		</div>
-		<div class="col-6 col-md-1 col-sm-3">
-			<a href="https://www.facebook.com/profile.php?id=694115332">
-				<img class="icon" src="img/cflag.jpg" alt="Behance">
-			</a>
-		</div>
-		<div class="col-6 col-md-1 col-sm-3">
-			<a href="https://www.facebook.com/profile.php?id=694115332">
-				<img class="icon" src="img/cflag.jpg" alt="Facebook">
-			</a>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+				<script src="js/responsive_edit.js"></script>
 		</div>
 
-	</div>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/responsive_edit.js"></script>
-</div>
-
-</body>
+	</body>
 </html>
