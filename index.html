@@ -12,34 +12,46 @@
 			<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body onload="checkWidth()">
-				<div class="main">
-					<div class="top" id="top">
-							<div class="container_logo">
-									<img class="logo" src="img/logo_black.png">
-									<h1>Kevin Wong</h1>
-							</div>
-							<div class="nav">
-								<label for="all">All </label>
-								<label for="works">Works </label>
-								<label for="academics">Academic </label>
-								<label for="personal">Personal </label>
-								<label for="contact">Contact </label>
-							</div>
+					<div class="top top-hide" id="top">
+						<div class="container_logo">
+							<img class="logo" src="img/logo_black.png">
+							<h1>Kevin Wong</h1>
 						</div>
+						<div class="upper-nav-container">
+							<label class="upper-nav nav-center" for="all">All</label>
+							<label class="upper-nav nav-center" for="works">Works</label>
+							<label class="upper-nav nav-center" for="academics">Academic</label>
+							<label class="upper-nav nav-center" for="personal">Personal</label>
+							<label class="upper-nav nav-center" for="about">About</label>
+						</div>
+					</div><!-- Top Section End -->
+
 					<div class="hero">
-						<div class="motto">
-							<h2>
-									Designing to improve the world physically and digitally.
-							</h2>
-						</div>
+							<div class="container_logo">
+								<img class="logo" src="img/logo_black.png">
+								<h1>Kevin Wong</h1>
+							</div>
+							<div class="motto">
+								<h2>Improving the physical and digital world through design.</h2>
+							</div>
 					</div>
 
+
+					<div class="nav-container">
+					<div class="lower-nav-container">
+						<label class="lower-nav nav-center" for="all">All</label>
+						<label class="lower-nav nav-center" for="works">Works</label>
+						<label class="lower-nav nav-center" for="academics">Academic</label>
+						<label class="lower-nav nav-center" for="personal">Personal</label>
+						<label class="lower-nav nav-center" for="about">About</label>
+					</div>
+				</div>
 			<div class="cards-section">
 				<input type="radio" id="all" name="type" >
 								<input type="radio" id="works" name="type" >
 								<input type="radio" id="academics" name="type" >
 								<input type="radio" id="personal" name="type" >
-								<input type="radio" id="contact" name="type" >
+								<input type="radio" id="about" name="type" >
 								
 				<div class="tile works">
 						<div class="bottom_layer">
@@ -51,9 +63,16 @@
 
 								<h4>Works</h4>
 								<p>App Improvement of the Rakuten Cutter App</p>
-								<a href="http://www.google.com"> See more</a>
+								<a href="#Cutter" id="#cutter-btn"> See more</a>
 							</div>
 						</div>
+				</div>
+				<div class="modal modal-hide" id="Cutter" aria-hidden="true">
+					<div class="modal-content">
+						<img src="img/Cutter/SliceDice.png">
+						Rakuten Cutter is a localized Japanse version of the Slice application in the United States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble States. After signing on, I found there were trouble 
+					</div>
+					<div class='modal-close'><a href="#">X</a></div>
 				</div>
 
 				<div class="tile works">
@@ -85,7 +104,7 @@
 						</div>
 					</div>
 
-				<div class="tile works">
+				<div class="tile personal">
 						<div class="bottom_layer">
 							<img class="cards_img" src="img/DLM/Desktop.png">
 						</div>
@@ -93,7 +112,7 @@
 							<div class="text">
 								<h2>DLM+</h2>
 
-								<h4>Works</h4>
+								<h4>Personal</h4>
 								<p>A UI interface design concept for project signups. </p>
 								<a href="http://www.google.com"> See more</a>
 							</div>
@@ -125,7 +144,21 @@
 								<a href="www.google.com"> See more</a>
 							</div>
 						</div>
-					</div>   
+					</div>
+					<div class="tile works">
+						<div class="bottom_layer">
+							<img class="cards_img" src="img/slide4.jpg">
+						</div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Rakuten Gora Onboarding Screen</h2>
+
+								<h4>Works</h4>
+								<p>Redesign of the Rakuten Gora App Onboarding Screen</p>
+								<a href="http://www.google.com"> See more</a>
+							</div>
+						</div>
+				</div>
 					<div class="tile academics">
 						<div class="bottom_layer"><img class="cards_img" src="img/Ant Lion.png"></div>
 						<div class="top_layer">
@@ -138,6 +171,18 @@
 							</div>
 						</div>
 					</div>
+				<div class="tile academics">
+						<div class="bottom_layer"><img class="cards_img" src="img/Pillar/thumbnail.png"></div>
+						<div class="top_layer">
+							<div class="text">
+								<h2>Gravitational Pillar</h2>
+
+								<h4>Academic</h4>
+								<p>An interactive standing table that reacts when a person gets close to it.</p>
+								<a href="www.google.com"> See more</a>
+							</div>
+						</div>
+				</div>
 				<div class="tile academics">
 						<div class="bottom_layer"><img class="cards_img" src="img/Glow.png"></div>
 						<div class="top_layer">
@@ -175,11 +220,15 @@
 							</div>
 						</div>
 					</div>
-				<div class="tile contact" style="padding:5px;">
-					<h2>Contact:</h2>
-						<h4>Email: <a href="#">wong.cheuk.him.kevin@gmail.com</a></h4>
+				<div class="tile about" style="padding:5px;">
+					<h2>About Me</h2>
+					<img class="profile-pic" src="img/profile.jpg">
+					<p>
+						My passion is to improve lives with creating things. Ever since I was young, I had an interest with creative things. Whether it was art class or home economics, those were classes I had always had an interest in. While my work focuses on designing in the digital world, I take my free time to work on projects in the physical world, in hopes of one day producing something that can redefine lifestyles.
+					</p>
+					<h4>Email: <a href="#">wong.cheuk.him.kevin@gmail.com</a></h4>
 					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
-						<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
+					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
 					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
 				</div> 
 		</div>
@@ -189,7 +238,6 @@
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 				<script src="js/responsive_edit.js"></script>
-		</div>
 
 	</body>
 </html>

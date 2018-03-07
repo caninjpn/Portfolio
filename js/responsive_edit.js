@@ -17,15 +17,29 @@ $(window).resize(checkWidth);
 /*detect onclick and hide not clicked, show only $this */
 
 console.log(' this shitty page loaded!');
-
+  var newImg = "img/logo_black.png";
+  var newImg2 = "img/logo_black.png";
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 50) {
-    $('.top').addClass('top-white');
+  if ($(this).scrollTop() > 250) {
     $('.logo').addClass('logo-scroll');
+    $('.logo').attr('src', newImg);
+    $('h1').addClass('h1-scroll');
   }
-  if ($(this).scrollTop() < 10) {
-    $('.top').removeClass('top-white');
+  if ($(this).scrollTop() < 250) {
     $('.logo').removeClass('logo-scroll');
+    $('.logo').attr('src', newImg2);
+    $('h1').removeClass('h1-scroll');
+  }
+  if ($(this).scrollTop() >= 337) {
+    $('.top').addClass('top-show');
+  }
+  if ($(this).scrollTop() < 337) {
+    $('.top').removeClass('top-show');
   }
 });
 
+$('#cutter-btn').click(function() {
+  console.log('cutter pressed');  
+document.getElementById("Cutter").addClass('modal-show');
+document.getElementById("Cutter").removeClass('modal-hide');
+});
