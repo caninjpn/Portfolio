@@ -38,8 +38,18 @@ $(window).scroll(function () {
   }
 });
 
-$('#cutter-btn').click(function() {
-  console.log('cutter pressed');  
-document.getElementById("Cutter").addClass('modal-show');
-document.getElementById("Cutter").removeClass('modal-hide');
+$('#cutter-btn').click(function(event) {
+  console.log('cutter pressed');
+  event.preventDefault();  
+  $("#cutter").toggleClass('modal-hide');
+  $("#modal-close-btn").toggleClass('modal-hide');
+  $('.modal-content').append("<p>Testing</p>");
+});
+
+$('#modal-close-btn').click(function(e) {
+  console.log('close pressed');
+  e.preventDefault();
+  $("#cutter").toggleClass('modal-hide');
+  $("#modal-close-btn").toggleClass('modal-hide');
+  $('.modal-content').empty();
 });
