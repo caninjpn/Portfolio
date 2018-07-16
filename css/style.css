@@ -2,6 +2,7 @@ html {
 	overflow-y: scroll;
 } 
 /*color: #997750*/
+/* main orange: #F8931F*/
 
 [class*="col-"] {
 	padding:0;
@@ -25,8 +26,8 @@ p{padding: 0px 0px;
 body{
 	margin: 0;
 	padding: 0;
-	/*background:#F8931F;*/
-	background-attachment: fixed;
+	background: #efefef;
+	background-repeat: no-repeat;
 	font-family: Roboto, sans-serif;
 }
 
@@ -219,6 +220,7 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 	overflow: hidden;
 	opacity: 1;
 	display: inline-block;
+	background: #ffffff;
 	border: 1px solid #aeaeae;
 	box-shadow: 0px 2px 1px 1px #aeaeae	;
 	-webkit-transition:all .3s ease;
@@ -259,21 +261,31 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 	overflow-y: scroll;
 	border: 1px solid #ffffff;
 	box-shadow: 0px 2px 1px 1px #aeaeae	;
+
+	padding: 14px;
 }
+
+.modal-content .text-container{
+	margin:  10px 0;
+}
+
+#modal-image{
+	max-width:50%;
+}
+
 
 .modal-btn{
 	position:absolute;
 	top:0;
 	right:1%;
 	padding:3px 10px;
-	background: #bf0000;
-	color:#ffffff;
+	background: #F8931F;
 	border-radius: 50px;
 	transition: all .5s ease;
 	z-index: 11;
 }
 
-.modal-close a:link,a:active,a:visited{
+#modal-close-btn a:link, a:active, a:hover, a:visited{
 	color: #ffffff;
 	}
 
@@ -383,9 +395,9 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 	}
 	.tile{
 		position:relative;
-		margin:0%;
+		margin:0 5px 8px;
 		padding:0;
-		width:100%;
+		width:97%;
 		height:100%;
 		overflow: hidden;
 		opacity: 1;

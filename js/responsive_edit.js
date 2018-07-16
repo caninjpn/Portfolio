@@ -1,3 +1,5 @@
+var x="hi";
+
 function checkWidth() {
   if ($(window).width() < 726) {
     $('#proj_txt').addClass('show');
@@ -38,18 +40,45 @@ $(window).scroll(function () {
   }
 });
 
-$('#cutter-btn').click(function(event) {
-  console.log('cutter pressed');
+
+var list = {//BEGIN JSON list of works
+
+  "portfolio_details":[
+
+    {
+      "title":"Cutter JSON",
+      "image":"slide4.jpg",
+      "description":"This is about Cutter"
+    }
+    ,
+
+    {
+      "title":"Point Gift Card JSON",
+      "image":"aboutbg.jpg",
+      "description":"This is about Point Gift Card"
+    }
+    
+    ]
+}//End JSON
+
+
+var obj = JSON.stringify(list);
+
+
+
+
+
+$('a').click(function(event) {
+  console.log(event.target.id);
   event.preventDefault();  
-  $("#cutter").toggleClass('modal-hide');
-  $("#modal-close-btn").toggleClass('modal-hide');
-  $('.modal-content').append("<p>Testing</p>");
+  $("#modal").toggleClass('modal-hide');
+  $("#modal-close-circle").toggleClass('modal-hide');
+      event.target.id = x;
+      document.getElementById("modal-image").src= obj.portfolio_details[x].image;
+      document.getElementById("modal-h3").innerHTML= object.portfolio_details[x].title;
+      document.getElementById("modal-p").innerHTML="This is about Cutter";
+  
 });
 
-$('#modal-close-btn').click(function(e) {
-  console.log('close pressed');
-  e.preventDefault();
-  $("#cutter").toggleClass('modal-hide');
-  $("#modal-close-btn").toggleClass('modal-hide');
-  $('.modal-content').empty();
-});
+
+
