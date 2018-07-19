@@ -76,7 +76,7 @@
 
 								<h4>Works</h4>
 								<p>Redesign of the Rakuten Point Gift cards</p>
-								<a data-id="2" href="#PointGift"> See more</a>
+								<a data-id="1" href="#PointGift"> See more</a>
 							</div>
 						</div>
 				</div>
@@ -95,12 +95,12 @@
 
 								<h4>Personal</h4>
 								<p>Custom launcher design targeted for elders who are transiting from feature phones to smartphones.</p>
-								<a href="http://www.google.com"> See more</a>
+								<a data-id="2" href="#ElderPhone"> See more</a>
 							</div>
 						</div>
 					</div>
 
-				<div class="tile personal">
+				<div class="tile works">
 						<div class="bottom_layer">
 							<img class="cards_img" src="img/DLM/Desktop.png">
 						</div>
@@ -108,9 +108,9 @@
 							<div class="text">
 								<h2>DLM+</h2>
 
-								<h4>Personal</h4>
+								<h4>Works</h4>
 								<p>A UI interface design concept for project signups. </p>
-								<a href="http://www.google.com"> See more</a>
+								<a data-id="3" href="#DLM"> See more</a>
 							</div>
 						</div>
 				</div>
@@ -124,7 +124,7 @@
 
 								<h4>Personal</h4>
 								<p>Spatial design study of how to make a room feel larger in a Japanese 6 J&#333; (10m<sup>2</sup>) Apartment.</p>
-								<a href="http://www.google.com"> See more</a>
+								<a data-id="4" href="#6Jo"> See more</a>
 							</div>
 						</div>
 					</div>
@@ -229,17 +229,20 @@
 				</div>
 
 				<!-- Modal Section -->
+				<div class="modal-bg modal-hide" id="modal-bg"></div>	
+				<div class='modal-btn modal-hide' id="modal-close-circle"><a href="#">X</a></div>
 				<div class="modal modal-hide" id="modal" aria-hidden="true">
-					<div class='modal-btn modal-hide' id="modal-close-circle"><a href="#" id="modal-close-btn">X</a></div>
 					<div class="modal-content">
-						<div class="modal-pic">
-							<img id="modal-image" src="img/logo.jpg" />
-						</div>
-						<div class="modal-pic">
-							<img id="modal-image2" src="img/logo.jpg" />
-						</div>
+							<div class="pic-container">
+								<div class="modal-pic">
+									<img id="modal-image" src="img/logo.jpg" />
+								</div>
+								<div class="modal-pic">
+									<img id="modal-image2" src="img/logo.jpg" />
+								</div>
+							</div>
 						<div class="text-container">
-							<h3 id="modal-h3"> Project Title Here</h3>
+							<h2 id="modal-h3"> Project Title Here</h2>
 							<p id="modal-p"> This is a default text before upated by DOM</p>
 						</div>
 					</div>

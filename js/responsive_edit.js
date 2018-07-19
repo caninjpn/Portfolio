@@ -2,15 +2,11 @@ var x="hi";
 
 function checkWidth() {
   if ($(window).width() < 726) {
-    $('#proj_txt').addClass('show');
-    $('#proj_txt2').addClass('show');
-    $('#proj_txt3').addClass('show');
-    $('#proj_txt4').addClass('show');
+    $('.text-container').insertBefore('.pic-container');
+    $('#modal-bg').removeClass('modal-bg');
   } else {
-    $('#proj_txt').removeClass('show');
-    $('#proj_txt2').removeClass('show');
-    $('#proj_txt3').removeClass('show');
-    $('#proj_txt4').removeClass('show');
+    $('.pic-container').insertBefore('.text-container');
+    $('#modal-bg').addClass('modal-bg');
   }
 }
 
@@ -43,6 +39,7 @@ $(document).ready(function() {
     console.log(event.target.id);
     event.preventDefault();  
     $("#modal").toggleClass('modal-hide');
+    $("#modal-bg").toggleClass('modal-hide');
     $("#modal-close-circle").toggleClass('modal-hide');
     var id = $(this).data('id'); //$(this).attr('id'); is fine too if you add id to <a>
     var obj = _objSearcher(id);
@@ -73,17 +70,18 @@ $(document).ready(function() {
     "portfolio_details":[
       {
         "id":"1",
-        "title":"Cutter JSON",
-        "image":"img/CUTTER/SliceDice.png",
-        "image2":"img/CUTTER/SliceDice.png",
-        "description":"This is about Cutter"
+        "title":"Rakuten Point Gift Card Renewal",
+        "Services": "<ul><li>User Experience</li><li>Digital Design</"
+        "image":"img/PGC/Top_PC.png",
+        "image2":"img/PGC/Top_PC.png",
+        "description":"The task to create a promotional page for Rakuten Point Gift Card became a task to renew the product's main page after initial analysis with the Customer Journey Map. Through this renewal the aim was to achieve 2 goals: <ol type='1'><li>1) to enrich user knowledge of the Point Gift Card service</li><li>2) connect the customer journey to other services in the Rakuten ecosystem.</li></ol><a href='http://pointgift.rakuten.co.jp/'>Point Gift Card Website</a>"
       },
       {
         "id":"2",
-        "title":"Point Gift Card JSON",
-        "image":"img/PGC/Top_PC.png",
+        "title":"Elder Phone",
+        "image":"img/Elder/ElderTop.png",
         "image2":"img/CUTTER/SliceDice.png",
-        "description":"This is about Point Gift Card"
+        "description":"My mother-in-law has been using a feature phone and is resistive of transitioning to a smart phone. There are phones that had been designed for edlerly people yet she was quite adamant in changing. During the thought, a hypothesis came up of 'what if she's afraid of the user interface?'. Therefore this elder phone UI had been created with the intention to mimic the UI of a feature phone, but on a touch interface."
       }
     ]
   }//End JSON
