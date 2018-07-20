@@ -12,40 +12,27 @@
 			<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body onload="checkWidth()">
-					<div class="top top-hide" id="top">
+					<div class="nav-container top top-show">
 						<div class="container_logo">
 							<img class="logo" src="img/logo_black.png">
 							<h1>Kevin Wong</h1>
 						</div>
-						<div class="upper-nav-container">
-							<label class="upper-nav nav-center" for="all">All</label>
-							<label class="upper-nav nav-center" for="works">Works</label>
-							<label class="upper-nav nav-center" for="academics">Academic</label>
-							<label class="upper-nav nav-center" for="personal">Personal</label>
-							<label class="upper-nav nav-center" for="about">About</label>
+						<div class="lower-nav-container">
+							<label class="lower-nav nav-center" for="all">All</label>
+							<label class="lower-nav nav-center" for="works">Works</label>
+							<label class="lower-nav nav-center" for="academics">Academic</label>
+							<label class="lower-nav nav-center" for="personal">Personal</label>
+							<label class="lower-nav nav-center" for="about">About</label>
 						</div>
-					</div><!-- Top Section End -->
-
+					</div>
 					<div class="hero">
-							<div class="container_logo">
-								<img class="logo" src="img/logo_black.png">
-								<h1>Kevin Wong</h1>
-							</div>
 							<div class="motto">
 								<h2>Improving the physical and digital worlds through design.</h2>
 							</div>
 					</div>
 
 
-					<div class="nav-container">
-					<div class="lower-nav-container">
-						<label class="lower-nav nav-center" for="all">All</label>
-						<label class="lower-nav nav-center" for="works">Works</label>
-						<label class="lower-nav nav-center" for="academics">Academic</label>
-						<label class="lower-nav nav-center" for="personal">Personal</label>
-						<label class="lower-nav nav-center" for="about">About</label>
-					</div>
-				</div>
+
 			<div class="cards-section">
 				<input type="radio" id="all" name="type" >
 								<input type="radio" id="works" name="type" >
@@ -66,7 +53,7 @@
 							</div>
 						</div>
 				</div>
-				<div class="tile works">
+				<div class="tile works" id="tile_PointGift">
 						<div class="bottom_layer">
 							<img class="cards_img" src="img/PGC/Top_PC_new.png">
 						</div>
@@ -76,16 +63,16 @@
 
 								<h4>Works</h4>
 								<p>Redesign of the Rakuten Point Gift cards</p>
-								<a data-id="1" href="#PointGift"> See more</a>
+								<a data-id="1" href="#PointGift" id="PointGift"> See more</a>
 							</div>
 						</div>
 				</div>
-				<div class="modal modal-hide" id="PointGift" aria-hidden="true">
+				<div class="modal modal-hide" aria-hidden="true">
 					<div class='modal-btn modal-hide' id="modal-close-btn"><a href="#">X</a></div>
 				</div>
 
 
-				<div class="tile personal">
+				<div class="tile personal" id="tile_Elder">
 						<div class="bottom_layer">
 							<img class="cards_img" src="img/Elder/ElderTop.png">
 						</div>
@@ -95,7 +82,7 @@
 
 								<h4>Personal</h4>
 								<p>Custom launcher design targeted for elders who are transiting from feature phones to smartphones.</p>
-								<a data-id="2" href="#ElderPhone"> See more</a>
+								<a data-id="2" id="Elder" href="#ElderPhone"> See more</a>
 							</div>
 						</div>
 					</div>

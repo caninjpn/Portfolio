@@ -33,7 +33,7 @@ p.soon{
 
 body{
 	margin: 0;
-	padding: 0;
+	padding: 0 0 20px;
 	background: #efefef;
 	background-repeat: no-repeat;
 	font-family: Roboto, sans-serif;
@@ -71,16 +71,17 @@ label{
 
 
 .top{
-	position:fixed;
-	top:-200px;
-	z-index: 10;
+	position:static;
+	top: 0px;
+	z-index: 1;
 	width:100%;
 	background-color:rgba(255,255,255,1);
 	box-shadow: 0px 1px 6px 2px #696969;
-	transition: all .4s ease;
+	transition: all 1s ease;
 	}
 
 .top-show{
+	position:fixed;
 	top: 0px;
 }
 
@@ -110,8 +111,9 @@ label{
 .hero{
 	float;left;
 	position: relative;
+	margin-top:75px;
 	width:100%;
-	height:200px;
+	height:120px;
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -182,12 +184,10 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 .upper-nav-container{
 	margin: 9px	auto;
 	width:100%;
-	transition: all .3s ease;
 }
 
 .lower-nav-container{
 	display:inline-block;
-	transition: all .3s ease;
 }
 
 .lower-nav-container label:first-child{
@@ -223,12 +223,14 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 .cards-section{
 	margin:0 auto;
 	width:98%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+	grid-gap: 5px;
 }
 
 .tile{
 	position:relative;
 	margin:.5%;
-	width:32%;
 	height:200px;
 	overflow: hidden;
 	opacity: 1;
@@ -245,8 +247,8 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 }
 
 .about{
-	width:98.7%;
-	height:10%;
+	height: 100%;
+	grid-column: span 3;
 }
 
 .modal{
@@ -293,7 +295,7 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 	position:absolute;
 	width:100%;
 	height:100%;
-	overflow-y: scroll;
+	overflow-y: none;
 	flex-direction: row;
 	border: 1px solid #ffffff;
 	box-shadow: 0px 2px 1px 1px #aeaeae	;
@@ -391,9 +393,6 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 
 
 @media screen and (max-width: 770px) {
-	body{
-		text-align:center;
-	}
 	label:last-child{
 		margin-bottom: 10px;
 		width:100%;
@@ -412,16 +411,18 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 	}
 
 	.top{
-	top:-230px;
+		top:-220px;
+		height:220px;
 	}
 
 	.top-show{
-	top:-70px;
-	height:220px;
+		top:0px;
+		position: fixed;
 	}
 
 	.hero{
-		height:200px;
+		margin-top:220px;
+		height:120px;
 	}
 
 	.profile-pic{
@@ -463,7 +464,6 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 		position:relative;
 		margin:0 5px 8px;
 		padding:0;
-		width:97%;
 		height:100%;
 		overflow: hidden;
 		opacity: 1;
@@ -488,21 +488,23 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 		font-size:16px;
 	}
 
-	.about{height:100%;}
+	.about{grid-column: span 1;}
 
 	.modal{
-		position: static;
-		margin:0;
+		position: relative;
+		top: -7px;
+		margin:0 auto;
 		padding:0;
 		max-height:100%;
+		height:100%;
 		width:95%;
 		border-radius: 0;
 		transition: all .5s ease;
-		z-index: 1;
+		z-index: -1;
 	}
 
 	.modal-hide{
-		top:0;
+		bottom:0;
 		max-height:0;
 		min-height:0;
 		border:none;
@@ -524,12 +526,13 @@ input[type="radio"][id="about"]:checked ~ .works, input[type="radio"][id="about"
 
 	.modal-btn{
 		position: fixed;
-		top:90%;
-		right:1%;
-		width:51px;
+		bottom:0%;
+		right:0%;
+		width:100%;
 		max-height:51px;
 		height:51px;
 		font-size:30px;
+		border-radius: 0px;
 		transition: all .5s ease;
 	}
 	.top_layer{
