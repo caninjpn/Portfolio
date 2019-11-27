@@ -278,8 +278,6 @@ input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="per
 	grid-column: span 2;
 }
 
-.about p{padding-top: 16px;}
-
 .contact{
 	grid-column: span 1;
 	background-image: linear-gradient(to right, #F8931F,#F8931F,#FFCA8D);
@@ -441,24 +439,28 @@ input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="per
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: top left;
 }
 
 .bottom_layer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
 	overflow: hidden;
 	}
+
+.bottom_layer img{
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
 
 .bottom_layer .text{
 	margin: 8px;
 }
 
 .top_layer{
-	position: absolute;
-	bottom:0px;
+	position: relative;
+	bottom:200px;
 	width: 100%;
 	height:100%;
 	opacity:0;
@@ -585,7 +587,7 @@ input[type="radio"][id="personal"]:checked ~ .works, input[type="radio"][id="per
 		font-size:16px;
 	}
 
-	.about{grid-column: span 2;}
+	.about{grid-column: span 1;}
 
 
 
