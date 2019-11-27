@@ -63,9 +63,6 @@ body {
 	font-weight: 800;
 }
 
-.tile-image-wrapper {
-}
-
 .tile-image {
 	width: 90%;
     display: flex;
