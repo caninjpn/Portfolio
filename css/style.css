@@ -1,6 +1,8 @@
 body {
-	background-color: #efefef;
+	background-color: #ffffff;
 }
+
+h1{text-align: center;}
 
 .background-top{
 		/* The image used */
@@ -19,10 +21,13 @@ body {
 
 .navigation{
 	position: fixed;
-	bottom: 0;
+	bottom:0;
+	width: 100%;
 	background-color: #ffffff;
 	padding: 16px;
 	z-index: 10;
+	perspective: 100px;
+	transform: rotateY(30);
 }
 
 .navigation h3{
@@ -43,16 +48,28 @@ body {
 	width: 100vw;
 }
 
+#intro a{
+	color: #333333;
+}
+
+a:link {
+	text-decoration: none;}
+a:hover, a:active{text-decoration: underline;}
+
 .work {
-	background-color: #bf0000;
+	background-color: #efefef;
 }
 
 .tile {
 	position: relative;
-	width: 100%;
-	background-color: #ffffff;
-	border: 1px solid #333333;
+	background:#dddddd;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #cdcdcd;
+	border-right: 10px solid #cdcdcd;
 	height: 200px;
+	overflow: hidden;
 }
 
 .tile:hover {
@@ -60,11 +77,12 @@ body {
 }
 
 .tile-h3 {
+	size:18px;
 	font-weight: 800;
 }
 
 .tile-image {
-	width: 90%;
+	width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -73,15 +91,9 @@ body {
 .tile-text-wrapper {
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	top: 0;
+	height: 50%;
+	bottom: 0;
 	left: 0;
 	padding: 10px;
-	background-color: #ffffff;
-	opacity: 0;
-	transition: .5s;
-}
-
-.tile-text-wrapper:hover {
-	opacity: .9;
+	background-color: rgba(255,255,255,.7);
 }
