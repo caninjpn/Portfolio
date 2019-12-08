@@ -4,6 +4,46 @@ body {
 
 h1{text-align: center;}
 
+#intro{
+	position: relative; 
+	min-height: 600px;
+	max-height: 100vh;
+}
+.intro-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.intro-bg-col{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg1{background-image: url("../img/reportbg.JPG");}
+.bg2{background-image: url("../img/spatial.jpg");}
+.bg3{background-image: url("../img/YDKM.jpg");}
+
+.intro-content{
+	background-color: rgba(0,0,0,.6);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+.intro-content h1{
+	color: #ffffff;
+}
+
 .background-top{
 		/* The image used */
 		background-image: url("../img/reportbg.jpg");
@@ -43,17 +83,13 @@ h1{text-align: center;}
 	width: 50px;
 }
 
-.section {
-	height: 92vh;
-	width: 100vw;
-}
-
 #intro a{
-	color: #333333;
+	color: #ffffff;
+	text-decoration:underline;}
 }
 
 a:link {
-	text-decoration: none;}
+	text-decoration:none;}
 a:hover, a:active{text-decoration: underline;}
 
 .work {
@@ -66,8 +102,8 @@ a:hover, a:active{text-decoration: underline;}
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	border: 1px solid #cdcdcd;
-	border-right: 10px solid #cdcdcd;
+	border: 1px solid #333333;
+	border-right: 10px solid #333333;
 	height: 200px;
 	overflow: hidden;
 }
@@ -77,7 +113,7 @@ a:hover, a:active{text-decoration: underline;}
 }
 
 .tile-h3 {
-	size:18px;
+	font-size:18px;
 	font-weight: 800;
 }
 
