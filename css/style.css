@@ -51,8 +51,6 @@ h1 {
 	background-color: rgba(0, 0, 0, .8);
 	border: 1px solid #dddddd;
 	color: #dddddd;
-	filter:
-
 }
 
 .intro-content h2 {
@@ -92,7 +90,6 @@ h1 {
 #intro a {
 	color: #ffffff;
 	text-decoration: underline;
-}
 }
 
 a:link {
