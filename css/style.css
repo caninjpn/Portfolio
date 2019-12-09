@@ -2,14 +2,19 @@ body {
 	background-color: #ffffff;
 }
 
-h1{text-align: center;}
-
-#intro{
-	position: relative; 
-	min-height: 600px;
-	max-height: 100vh;
+h1 {
+	text-align: center;
 }
-.intro-bg{
+
+#intro {
+	position: relative;
+	min-height: 600px;
+	height: 100vh;
+	max-height: 100%;
+
+}
+
+.intro-bg {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -18,50 +23,51 @@ h1{text-align: center;}
 	padding: 0;
 }
 
-.intro-bg-col{
-	display: inline-block;
-	width: 20%;
-	height: 100%;
+.intro-bg-row {
+	display: block;
+	height: 20%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	background-attachment: fixed;
-	background-position:center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.bg1{background-image: url("../img/reportbg.JPG");}
-.bg2{background-image: url("../img/spatial.jpg");}
-.bg3{background-image: url("../img/YDKM.jpg");}
-
-.intro-content{
-	background-color: rgba(0,0,0,.6);
-	border: 1px solid #ffffff;
-	color: #ffffff;
+.bg1 {
+	background-image: url("../img/reportbg.JPG");
 }
 
-.intro-content h1{
-	color: #ffffff;
+.bg2 {
+	background-image: url("../img/spatial.jpg");
 }
 
-.background-top{
-		/* The image used */
-		background-image: url("../img/reportbg.jpg");
-	  
-		/* Set a specific height */
-		width: 100vw;
-		height: 100vh;
-	  
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: left;
-		background-repeat: no-repeat;
-		background-size: cover;
+.bg3 {
+	background-image: url("../img/YDKM.jpg");
 }
 
-.navigation{
+.intro-content {
+	background-color: rgba(0, 0, 0, .8);
+	border: 1px solid #dddddd;
+	color: #dddddd;
+	filter:
+
+}
+
+.intro-content h2 {
+	font-weight: 200;
+	color: #aaaaaa;
+}
+
+.intro-content .profile {
+	width: 100%;
+	filter: brightness(70%)
+}
+
+.navigation {
 	position: fixed;
-	bottom:0;
+	bottom: 0;
 	width: 100%;
 	background-color: #ffffff;
 	padding: 16px;
@@ -70,27 +76,33 @@ h1{text-align: center;}
 	transform: rotateY(30);
 }
 
-.navigation h3{
+.navigation h3 {
 	display: inline-block;
 }
 
-.navigation .nav-list{
+.navigation .nav-list {
 	display: inline-block;
 }
 
-.logo{
-	display:inline-block;
+.logo {
+	display: inline-block;
 	width: 50px;
 }
 
-#intro a{
+#intro a {
 	color: #ffffff;
-	text-decoration:underline;}
+	text-decoration: underline;
+}
 }
 
 a:link {
-	text-decoration:none;}
-a:hover, a:active{text-decoration: underline;}
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
 
 .work {
 	background-color: #efefef;
@@ -98,7 +110,7 @@ a:hover, a:active{text-decoration: underline;}
 
 .tile {
 	position: relative;
-	background:#dddddd;
+	background: #dddddd;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -113,15 +125,15 @@ a:hover, a:active{text-decoration: underline;}
 }
 
 .tile-h3 {
-	font-size:18px;
+	font-size: 18px;
 	font-weight: 800;
 }
 
 .tile-image {
 	width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .tile-text-wrapper {
@@ -131,5 +143,5 @@ a:hover, a:active{text-decoration: underline;}
 	bottom: 0;
 	left: 0;
 	padding: 10px;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255, 255, 255, .7);
 }
