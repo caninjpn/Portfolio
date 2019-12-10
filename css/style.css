@@ -1,5 +1,6 @@
 body {
-	background-color: #ffffff;
+	background-color: #050505;
+	color: #dddddd;
 }
 
 h1 {
@@ -106,19 +107,31 @@ a:active {
 }
 
 .tile {
-	position: relative;
-	background: #dddddd;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border: 1px solid #333333;
-	border-right: 10px solid #333333;
+	background: none;
+	border: 1px solid #dddddd;
+	border-right: 10px solid #dddddd;
 	height: 200px;
 	overflow: hidden;
+	color: #333333;
+}
+
+.tile-body{
+	position: relative;
+	width: 95%;
+	height: 95%;
 }
 
 .tile:hover {
 	display: block;
+}
+
+.tile-bg{
+	position: absolute;
+	top: 2.5%;
+	left: 2.5%;
+	right: 2.5%;
+	bottom: 2.5%;
+	width: 100%;
 }
 
 .tile-h3 {
@@ -139,6 +152,5 @@ a:active {
 	height: 50%;
 	bottom: 0;
 	left: 0;
-	padding: 10px;
 	background-color: rgba(255, 255, 255, .7);
 }
