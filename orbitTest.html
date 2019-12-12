@@ -3,139 +3,82 @@
 
 <head>
     <style>
-        .orbit-main {
-            perspective: 2000px;
-            perspective-origin: bottom;
+        .orbit {
             position: absolute;
-            top: 15%;
-            left: 30%;
-            text-align: center;
+            top: 50%;
+            left: 25%;
+            width: 800px;
+            height: 20px;
+            transform-style: preserve-3d;
+            animation-name: orbit;
+            animation-duration: 5s;
+            transform: rotateX(-40deg)
         }
 
         .ret {
             position: absolute;
             width: 400px;
-            height: 200px;
+            height: 50px;
+            color: #333333;
+            font-size: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .ring {
+            position: absolute;
+            width: 700px;
+            height: 700px;
             border: 1px solid #333333;
-        }
-
-        .bit1 {
-            transform: rotateY(0deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit;
-            animation-duration: 20s;
-        }
-
-        .bit2 {
-            transform: rotateY(60deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit2;
-            animation-duration: 20s;
-        }
-
-        .bit3 {
-            transform: rotateY(120deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit3;
-            animation-duration: 20s;
-        }
-
-        .bit4 {
-            transform: rotateY(180deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit4;
-            animation-duration: 20s;
-        }
-
-        .bit5 {
-            transform: rotateY(240deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit5;
-            animation-duration: 20s;
-        }
-
-        .bit6 {
-            transform: rotateY(300deg) translateX(-400px);
-            perspective-origin: bottom;
-            transform-style: preserve-3d;
-            animation-name: orbit6;
-            animation-duration: 20s;
-        }
-
-        /*
-        @keyframes orbit-main {
-            from{transform: rotateY(0deg) translateX(-400px);}
-            to {transform: rotateY(360deg) translateX(-400px);}
+            border-radius: 400px;
+            transform: rotateX(90deg) translate3d(50px,0,300px);
         }
 
         @keyframes orbit {
-            from{transform: rotateY(0deg) translateX(-400px);}
-            to {transform: rotateY(360deg) translateX(-400px);}
-        }
-        @keyframes orbit2 {
-            from{transform: rotateY(60deg) translateX(-400px);}
-            to {transform: rotateY(420deg) translateX(-400px);}
-        }
-        @keyframes orbit3 {
-            from{transform: rotateY(120deg) translateX(-400px);}
-            to {transform: rotateY(480deg) translateX(-400px);}
-        }
-        @keyframes orbit4 {
-            from{transform: rotateY(180deg) translateX(-400px);}
-            to {transform: rotateY(540deg) translateX(-400px);}
-        }
-        @keyframes orbit5 {
-            from{transform: rotateY(240deg) translateX(-400px);}
-            to {transform: rotateY(600deg) translateX(-400px);}
-        }
-        @keyframes orbit6 {
-            from{transform: rotateY(300deg) translateX(-400px);}
-            to {transform: rotateY(660deg) translateX(-400px);}
-        }
-*/
-        .orbit-2 {
-            position: absolute;
-            top: 25%;
-            left: 25%;
+            from {
+                transform: rotateX(-40deg) rotateY(0deg);
+            }
+
+            to {
+                transform: rotateX(-40deg) rotateY(720deg);
+            }
         }
 
         .rd1 {
-            transform: translate3d(0, 0, 0) rotateY(0);
+            transform: translate3d(200px, 0, 350px) rotateY(0);
         }
 
         .rd2 {
-            transform: translate3d(300px,0px, 0) rotateY(60deg);
+            transform: translate3d(500px, 0px, 175px) rotateY(60deg);
         }
-        .rd3{
-            transform: translate3d(300px)
+
+        .rd3 {
+            transform: translate3d(500px, 0px, -175px) rotateY(120deg);
+        }
+
+        .rd4 {
+            transform: translate3d(200px, 0px, -350px) rotateY(180deg);
+        }
+
+        .rd5 {
+            transform: translate3d(-100px, 0px, -175px) rotateY(240deg);
+        }
+
+        .rd6 {
+            transform: translate3d(-100px, 0px, 175px) rotateY(300deg);
         }
     </style>
 </head>
 
 <body>
-    <!--
-    <div class="orbit-main">
-        <div class="ret bit1">Designer</div>
-        <div class="ret bit2">Maker</div>
-        <div class="ret bit3">Ideator</div>
-        <div class="ret bit4">Canadian</div>
-        <div class="ret bit5">5</div>
-        <div class="ret bit6">6</div>
-    </div>
--->
-
-    <div class="orbit-2">
+    <div class="orbit">
         <div class="ret rd1">Designer</div>
         <div class="ret rd2">Maker</div>
         <div class="ret rd3">Ideator</div>
         <div class="ret rd4">Canadian</div>
         <div class="ret rd5">5</div>
         <div class="ret rd6">6</div>
+        <div class="ring"></div>
     </div>
 </body>
 

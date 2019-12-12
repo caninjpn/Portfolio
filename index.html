@@ -1,521 +1,205 @@
 <!doctype html>
 <html lang="en">
-<<<<<<< HEAD
+
 <head>
-	<title>Kevin Wong - UX Design</title>
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Kevin Wong - Striving to improve</title>
+
+  <script>
+  function windowCheck(){
+  var h = window.innerHeight;
+  $('#intro').css("height", h);
+  $('.row').css("min-height", h);
+  }
+  </script>
 </head>
-<body onload="checkWidth()">
-	<div class="nav-container top top-show">
-		<div class="bar"></div>
-		<div class="container_logo">
-			<img class="logo" src="img/Logo_Black.png">
-			<h1>Kevin Wong</h1>
-		</div>
-		<div class="lower-nav-container">
-			<label class="lower-nav nav-center" for="all">All</label>
-			<label class="lower-nav nav-center" for="works">Works</label>
-			<label class="lower-nav nav-center" for="DailyUI">Daily UI</label>
-			<label class="lower-nav nav-center" for="personal">Personal</label>
-		</div>
 
-	</div>
-
-	<div class="hero">
-		<div class="motto">
-			<h2>Improving the physical and digital worlds through design.</h2>
-		</div>
-	</div>
-
-
-	<div class="container-sm">
-			<div class="col-sm-4"><p>This is col-sm-4</p> </div>
-			<div class="col-sm-4"><p>This is col-sm-4</p> </div>
-			<div class="col-sm-4"><p>This is col-sm-4</p> </div>
-			<div class="col-sm-4"><p>This is col-sm-4</p> </div>
-	</div>
-	<div class="cards-section">
-		<input type="radio" id="all" name="type" >
-		<input type="radio" id="works" name="type" >
-		<input type="radio" id="DailyUI" name="type" >
-		<input type="radio" id="personal" name="type" >
-
-		<div class="tile personal about">
-			<img class="profile-pic" src="img/profile.jpg">
-			<p>
-				I'm a Canadian by birth to parents from Hong Kong, giving me an opportunity to live in a multi-cultural environment. My passion is to improve the world by taking the problems I could reach and solve them before eventually sharing it to the world. Whether it is for work that focuses on designing in the digital realm, or after work at home to solve miniscule household whims in the physical world, I strive in hopes of eventually I could produce something that can redefine lifestyles. The following is a collection of what I do.
-			</p>
-
-		</div>
-	
-		<div class="tile  DailyUI">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/DailyUI/004_thumbnail.png" alt="DailyUI_004">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Daily UI #004</h2>
-
-					<h4>Design</h4>
-					<p>Landing Page</p>
-					<a data-id="9" href="#DailyUI_004" id="DailyUI_004"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  DailyUI">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/DailyUI/003_01.png" alt="DailyUI_003">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Daily UI #003</h2>
-
-					<h4>Design</h4>
-					<p>Landing Page</p>
-					<a data-id="8" href="#DailyUI_003" id="DailyUI_003"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile works" id="tile_Wallet">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/RWallet.png" alt="Rakuten Wallet">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Rakuten Wallet</h2>
-
-					<h4>Works</h4>
-					<p>Building the Rakuten's Cryptocurrency service website and app from the ground up.</p>
-					<a data-id="5" href="#Wallet" id="Wallet" class="modal_work"> See more</a>
-				</div>
-			</div>
-		</div>
-		<div class="tile  works" id="tile_PointGift">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/PGC/PCG.png" alt="Rakuten Point Gift Card">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Rakuten Point Gift Card</h2>
-
-					<h4>Works</h4>
-					<p>Redesign of the Rakuten Point Gift Card Landing Page.</p>
-					<a data-id="4" href="#PointGift" id="PointGift"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  DailyUI">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/DailyUI/002_thumbnail.png" alt="DailyUI_002">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Daily UI #002</h2>
-
-					<h4>Design</h4>
-					<p>Credit Card Sign Up Form</p>
-					<a data-id="7" href="#DailyUI_002" id="DailyUI_002"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  personal" id="tile_6jo">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/spatial.jpg" alt="6Jo room">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Case Study: Spatial Design</h2>
-
-					<h4>Personal</h4>
-					<p>A study of how to efficiently make use of the space in a tight space.</p>
-					<a data-id="10" href="#6jo" id="6jo"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  works" id="tile_PointClub">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/PointClub.png" alt="Rakuten Point Club">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Rakuten PointClub</h2>
-
-					<h4>Works</h4>
-					<p>Improving the exposure of the rank information page.</p>
-					<a data-id="3" href="#PointClub" id="PointClub"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  personal" id="tile_Glow">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/Glow.png" alt="Glow Lightball">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Glow</h2>
-
-					<h4>Personal</h4>
-					<p>Controlling a light using natural human motions.</p>
-					<a data-id="12" href="#PointGift" id="PointGift"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile  works" id="tile_Gateway">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/Gateway.png" alt="Rakuten Gateway">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Rakuten Gateway</h2>
-
-					<h4>Works</h4>
-					<p>Improvement of the Rakuten Gateway Experience.</p>
-					<a data-id="2" href="#Gateway" id="Gateway"> See more</a>
-				</div>
-			</div>
-		</div>
-		<div class="tile  works">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/Gora/01.png" alt="Rakuten Gora">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Rakuten Gora Onboarding Screen</h2>
-
-					<h4>Works</h4>
-					<p>Redesign of the Rakuten Gora App Onboarding Experience.</p>
-					<a data-id="1" href="#Gora" id="Gora"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile DailyUI">
-			<div class="bottom_layer">
-				<img class="cards_img" src="img/DailyUI/001.png" alt="DailyUI_001">
-			</div>
-			<div class="top_layer">
-				<div class="text">
-					<h2>Daily UI #001</h2>
-
-					<h4>Daily UI</h4>
-					<p>Sign Up</p>
-					<a data-id="6" href="#DailyUI_001" id="DailyUI_001"> See more</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="tile contact personal" id="tile_Contact">
-			<div class="contact_text">
-				<h4>Connect with me:</h4>
-				<ul>
-					<li>		
-						<a href="https://www.linkedin.com/in/kevin-wong-UX" ><img src="img/icons/ic_LinkedIn_white.png" alt="LinkedIn" class="contact-icon"></a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/caninjpn/"><img src="img/icons/ic_Instagram_white.png" alt="LinkedIn" class="contact-icon"></a>
-					</li>
-
-				</div>
-			</div>
-			<!-- Modal Section -->
-			<div>
-				<div class="modal-bg modal-hide" id="modal-bg"></div>	
-				<a href="#"><div class='modal-btn modal-hide' id="modal-close-circle">X</div></a>
-				<div class="modal modal-hide" id="modal" aria-hidden="true">
-					<div class="row">
-						<div class="text-container col-11 col-sm">
-							<h2 id="modal-h2"> Project Title Here</h2>
-							<a id="modal-link" href="https://gateway.rakuten.co.jp"><div id="modal-link-text">Visit Site</div></a>
-							<br>
-							<h3 id="modal-category1" class="modal-category">Task</h3>
-							<p id="modal-task"> This is a default text before upated by DOM</p>
-							<h3 id="modal-category2" class="modal-category">Process</h3>
-							<p id="modal-process"> This is a default text before upated by DOM</p>
-							<h3 id="modal-category3" class="modal-category"> Delivery</h3>
-							<p id="modal-delivery"> This is a default text before upated by DOM</p>
-						</div>
-						<div class="pic-container col-11 col-sm-5">
-							<div class="modal-pic">
-								<img id="modal-image" src="img/logo.jpg" />
-							</div>
-							<div class="modal-pic">
-								<img id="modal-image2" src="img/logo.jpg" />
-							</div>
-						</div>
-					</div> 
-				</div>
-			</div>
-			<!-- End Modal -->
-		</div>
-		<!--</div> CARD SECTION END--> 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-		<script src="js/responsive_edit.js"></script>
-
-	</body>
-	</html>
-=======
-	<head>
-			<title>Kevin Wong - UX Design</title>
-			<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-		<!-- Required meta tags -->
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Bootstrap CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-			<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body onload="checkWidth()">
-					<div class="nav-container top top-show">
-						<div class="container_logo">
-							<img class="logo" src="img/logo_black.png">
-							<h1>Kevin Wong</h1>
-						</div>
-						<div class="lower-nav-container">
-							<label class="lower-nav nav-center" for="all">All</label>
-							<label class="lower-nav nav-center" for="works">Works</label>
-							<label class="lower-nav nav-center" for="academics">Academic</label>
-							<label class="lower-nav nav-center" for="personal">Personal</label>
-							<label class="lower-nav nav-center" for="about">About</label>
-						</div>
-					</div>
-					<div class="hero">
-							<div class="motto">
-								<h2>Improving the physical and digital worlds through design.</h2>
-							</div>
-					</div>
+<body onLoad="windowCheck()">
+  <!--Navigation-->
+  <!--
+  <div class="container-fluid navigation">
+    <div class="row">
+      <div class="col-3">
+        <img class="logo" src="img/Logo_Black.png" alt="Kevin Wong">
+        <h3 class="align-bottom"> Kevin Wong</h3>
+        <p>is a </p>
+      </div>
+      <div class="col-1 text-center">Designer</div>
+      <div class="col-1 text-center">Maker</div>
+      <div class="col-1 text-center">Thinkerer</div>
+      <div class="col-1 text-center">Ideas Man</div>
+      <div class="col-1 text-center">Canadian</div>
+      <div class="col-1 text-center">Gamer</div>
+    </div>
+  </div>
+-->
+  <!--Body Start-->
+  <div id="intro" class="row p-0 m-0 justify-content-center intro-wrap align-items-center">
+    <div class="col-12 intro-bg m-0 p-0">
+      <div class="intro-bg-row bg1"></div>
+      <div class="intro-bg-row bg2"></div>
+      <div class="intro-bg-row bg3"></div>
+      <div class="intro-bg-row bg2"></div>
+      <div class="intro-bg-row bg3"></div>
+    </div>
+    <div class="col-lg-4 p-0 m-0 text-center intro-content">
+      <div class="row">
+        <div class="col-12 p-5">
+          <img class="logo" src="img/Logo_White.png" alt="Kevin Wong">
+          <h2> I am a </h2>
+          <a class="text-center" href="#Designer">
+            <h1>Designer</h1>
+          </a>
+          <a href="#Maker">
+            <h1>Maker</h1>
+          </a>
+          <a href="#Ideas Man">
+            <h1>Ideas Man</h1>
+          </a>
+          <a href="#Canadian">
+            <h1>Canadian</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="container p-0">
+    <div id="Designer" class="row m-0 p-0">
+      <div class="col-12 p-1">
+        <h1>I am a Designer</h1>
+        <p>The beginning of being a designer stems all the way back into university, when I applied for the School of Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that even after graduating and began working as a UX Designer in Rakuten Inc, it's not enough. It's became a habit for me to look at objects and experience around me and wonder how I could improve the experience even better. </p>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-work">Rakuten Wallet</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">6</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 p-1">
+        <div class="card tile">
+          <div class="tile-body">
+            <img class="tile-bg" src="img/reportbg.JPG" alt="">
+            <div class="card-body tile-text-wrapper p-1">
+              <h5 class="card-title badge-personal">6</h5>
+              <p class="card-text tile-text"> This is the description area.</p>
+              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="cards-section">
-				<input type="radio" id="all" name="type" >
-								<input type="radio" id="works" name="type" >
-								<input type="radio" id="academics" name="type" >
-								<input type="radio" id="personal" name="type" >
-								<input type="radio" id="about" name="type" >
-								
-				<div class="tile works">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/RCoin.png">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Rakuten Coin Project</h2>
+    <div id="Maker" class="row m-0 ">
+      <div class="col-12 p-1">
+        <h1>I am a Maker</h1>
+        <p>Studying for the Bachelor of Arts in Design and Media at SFU, one of the things I loved to do the most was to tinker electronics for the assignments. At work after I go home and tuck my kids to sleep I'd go to my ittle workshop and work away on some little project.</p>
+      </div>
+    </div>
 
-								<h4>Works</h4>
-								<p class="soon">Coming Soon</p>
-							</div>
-						</div>
-				</div>
-				<div class="tile works" id="tile_PointGift">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/PGC/Top_PC_new.png">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Rakuten Point Gift cards Redesign</h2>
+    <div id="Ideasr" class="row m-0 ">
+      <div class="col-12 p-1">
+        <h1>I am an Ideas Man</h1>
+        <p>Since I had graduated, I had started bringing booklets with me everywhere I go when I can because once I have an Idea I would jot it down. After my second book, I am slowly transiting over to my tablet.</p>
+      </div>
+    </div>
 
-								<h4>Works</h4>
-								<p>Redesign of the Rakuten Point Gift cards</p>
-								<a data-id="1" href="#PointGift" id="PointGift"> See more</a>
-							</div>
-						</div>
-				</div>
-				<div class="modal modal-hide" aria-hidden="true">
-					<div class='modal-btn modal-hide' id="modal-close-btn"><a href="#">X</a></div>
-				</div>
+    <div id="Canadian" class="row m-0 ">
+      <div class="col-12 p-1">
+        <h1>I am a Canadian</h1>
+        <span class="col-10">
+          <p> This is one of the most definitive point of whom I identify myself as if you ask about me. In a world where ethnicity and nationality is intermixed,
+            there has been times when people had asked if I'm Chinese and I'd respond to them that I'm a Canadian. Born
+            and raised in Canada, the only relation to China is my lineage of which I was born to parents from Hong
+            Kong.
+          </p>
+        </span>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 
-
-				<div class="tile personal" id="tile_Elder">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/Elder/ElderTop.png">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Elder Phone</h2>
-
-								<h4>Personal</h4>
-								<p>Custom launcher design targeted for elders who are transiting from feature phones to smartphones.</p>
-								<a data-id="2" id="Elder" href="#ElderPhone"> See more</a>
-							</div>
-						</div>
-					</div>
-
-				<div class="tile works">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/DLM/Desktop.png">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>DLM+</h2>
-
-								<h4>Works</h4>
-								<p>A UI interface design concept for project signups. </p>
-								<a data-id="3" href="#DLM"> See more</a>
-							</div>
-						</div>
-				</div>
-				<div class="tile personal">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/Transform_Space.png">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>6 J&#333; Room</h2>
-
-								<h4>Personal</h4>
-								<p>Spatial design study of how to make a room feel larger in a Japanese 6 J&#333; (10m<sup>2</sup>) Apartment.</p>
-								<a data-id="4" href="#6Jo"> See more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="tile personal">
-						<div class="bottom_layer"><img class="cards_img" src="img/side_table.png"></div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>IKEA add-on</h2>
-
-								<h4>Personal</h4>
-								<p>A side table that hangs off the side of a IKEA bed</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-						</div>
-					</div>
-					<div class="tile works">
-						<div class="bottom_layer">
-							<img class="cards_img" src="img/slide4.jpg">
-						</div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Rakuten Gora Onboarding Screen</h2>
-
-								<h4>Works</h4>
-								<p>Redesign of the Rakuten Gora App Onboarding Screen</p>
-								<a href="http://www.google.com"> See more</a>
-							</div>
-						</div>
-				</div>
-					<div class="tile academics">
-						<div class="bottom_layer"><img class="cards_img" src="img/Ant Lion.png"></div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Ant Lion</h2>
-
-								<h4>Academic</h4>
-								<p>A maze game that is randomly generated with added mechanics to increase the challenge.</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-						</div>
-					</div>
-				<div class="tile academics">
-						<div class="bottom_layer"><img class="cards_img" src="img/Pillar/thumbnail.png"></div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Gravitational Pillar</h2>
-
-								<h4>Academic</h4>
-								<p>An interactive standing table that reacts when a person gets close to it.</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-						</div>
-				</div>
-				<div class="tile academics">
-						<div class="bottom_layer"><img class="cards_img" src="img/Glow.png"></div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Glow</h2>
-
-								<h4>Academic</h4>
-								<p>A new way to control lighting using human natural movement.</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-
-						</div>
-					</div>
-				<div class="tile academics">
-						<div class="bottom_layer"><img class="cards_img" src="img/Music_Hand.png"></div>
-						<div class="top_layer">
-							<div class="text">
-								<h2>Music Hand</h2>
-
-								<h4>Academic</h4>
-								<p>Conduct music with your finger.</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-						</div>
-					</div>
-					<div class="tile academics">
-						<div class="bottom_layer"><img class="cards_img" src="img/YDKM.png"></div>
-						<div class="top_layer">
-							<div class="text">
-							<h2>You Don't Know Me</h2>
-
-								<h4>Academic</h4>
-								<p>A project to raise awareness on cyber-bullying.</p>
-								<a href="www.google.com"> See more</a>
-							</div>
-						</div>
-					</div>
-				<div class="tile about" style="padding:5px;">
-					<h2>About Me</h2>
-					<img class="profile-pic" src="img/profile.jpg">
-					<p>
-						My passion is to improve lives with creating things. Ever since I was young, I had an interest with creative things. Whether it was art class or home economics, those were classes I had always had an interest in. While my work focuses on designing in the digital world, I take my free time to work on projects in the physical world, in hopes of one day producing something that can redefine lifestyles.
-					</p>
-					<h4>Email: <a href="#">wong.cheuk.him.kevin@gmail.com</a></h4>
-					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
-					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
-					<a href="#"><img class="contact-icon" src="img/cflag.jpg"></a>
-				</div>
-
-				<!-- Modal Section -->
-				<div class="modal-bg modal-hide" id="modal-bg"></div>	
-				<div class='modal-btn modal-hide' id="modal-close-circle"><a href="#">X</a></div>
-				<div class="modal modal-hide" id="modal" aria-hidden="true">
-					<div class="modal-content">
-							<div class="pic-container">
-								<div class="modal-pic">
-									<img id="modal-image" src="img/logo.jpg" />
-								</div>
-								<div class="modal-pic">
-									<img id="modal-image2" src="img/logo.jpg" />
-								</div>
-							</div>
-						<div class="text-container">
-							<h2 id="modal-h3"> Project Title Here</h2>
-							<p id="modal-p"> This is a default text before upated by DOM</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Modal -->
-
-		</div>
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-				<script src="js/responsive_edit.js"></script>
-
-	</body>
 </html>
->>>>>>> eba1cb379e6ef8b794d91807df20dbbd41adaab5
