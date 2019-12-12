@@ -11,14 +11,14 @@
 
         .orbit {
             position: absolute;
-            top: 0%;
-            right: 0%;
+            bottom: 40%;
+            right: 10%;
             width: 800px;
             height: 20px;
             transform-style: preserve-3d;
             animation-name: orbit;
             animation-duration: 5s;
-            transform: rotateX(-20deg);
+            transform: scale3d(.5, .5, .5) translate3D(30px, -400px, 280px);
         }
 
         .ret {
@@ -29,6 +29,7 @@
             font-size: 40px;
             text-align: center;
             vertical-align: middle;
+            text-shadow: 0 0 10px #ffffff;
         }
 
         .ring {
@@ -38,6 +39,7 @@
             border: 3px solid #dddddd;
             border-radius: 400px;
             transform: rotateX(90deg) translate3d(50px, 0, 300px);
+            box-shadow: 0 0 5px #ffffff;
         }
 
         .out {
@@ -45,6 +47,7 @@
             height: 710px;
             border: 4px dotted #dddddd;
             transform: rotateX(90deg) translate3d(44px, 0, 290px);
+            animation: inRing 2s infinite;
         }
 
         .out2 {
@@ -52,15 +55,78 @@
             height: 720px;
             border: 4px dotted #ffffff;
             transform: rotateX(90deg) translate3d(38px, 0, 280px);
+            animation: inRing2 2.2s infinite;
+        }
+
+        .out3 {
+            width: 720px;
+            height: 720px;
+            border: 4px dotted #ffffff;
+            transform: rotateX(90deg) translate3d(38px, 0, 280px);
+            animation: inRing3 3.2s infinite alternate;
         }
 
         @keyframes orbit {
-            from {
+            0% {
                 transform: rotateX(-20deg) rotateY(0deg);
             }
 
-            to {
+            50% {
                 transform: rotateX(-20deg) rotateY(720deg);
+            }
+
+            100% {
+                transform: scale3d(.5, .5, .5) translate3D(30px, -400px, 280px);
+            }
+        }
+
+        @keyframes inRing {
+            0% {
+                transform: rotateX(90deg) translate3d(38px, 0, 280px);
+            }
+
+            50% {
+                transform: rotateX(90deg) translate3d(38px, 0, 320px);
+            }
+
+            100% {
+                transform: rotateX(90deg) translate3d(38px, 0, 280px);
+            }
+        }
+
+        @keyframes inRing2 {
+            0% {
+
+                border: 4px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 320px);
+            }
+
+            50% {
+                border: 6px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 260px);
+            }
+
+            100% {
+                border: 4px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 320px);
+            }
+        }
+
+        @keyframes inRing3 {
+            0% {
+
+                border: 4px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 300px);
+            }
+
+            50% {
+                border: 6px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 280px);
+            }
+
+            100% {
+                border: 4px dotted #ffffff;
+                transform: rotateX(90deg) translate3d(38px, 0, 320px);
             }
         }
 
@@ -95,12 +161,13 @@
         <div class="ret rd1">Designer</div>
         <div class="ret rd2">Maker</div>
         <div class="ret rd3">Ideator</div>
-        <div class="ret rd4">Canadian</div>
+        <div class="ret rd4">Creator</div>
         <div class="ret rd5">5</div>
-        <div class="ret rd6">6</div>
+        <div class="ret rd6">Canadian</div>
         <div class="ring"></div>
         <div class="ring out"></div>
         <div class="ring out2"></div>
+        <div class="ring out3"></div>
     </div>
 </body>
 

@@ -17,6 +17,7 @@
   function windowCheck(){
   var h = window.innerHeight;
   $('#intro').css("height", h);
+  $('#nav').css("height", h);
   $('.row').css("min-height", h);
   }
   </script>
@@ -24,45 +25,37 @@
 
 <body onLoad="windowCheck()">
   <!--Navigation-->
-  <!--
-  <div class="container-fluid navigation">
-    <div class="row">
-      <div class="col-3">
-        <img class="logo" src="img/Logo_Black.png" alt="Kevin Wong">
-        <h3 class="align-bottom"> Kevin Wong</h3>
-        <p>is a </p>
-      </div>
-      <div class="col-1 text-center">Designer</div>
-      <div class="col-1 text-center">Maker</div>
-      <div class="col-1 text-center">Thinkerer</div>
-      <div class="col-1 text-center">Ideas Man</div>
-      <div class="col-1 text-center">Canadian</div>
-      <div class="col-1 text-center">Gamer</div>
-    </div>
+  <div id="nav">
+    <div>Kevin Wong</div>
+
+    <div>Designer</div>
+    <div>Maker</div>
+    <div>Creator</div>    
+    <div>Creative Thinker</div>
+    <div>Canadian</div>
   </div>
--->
   <!--Body Start-->
-  <div id="intro" class="row p-0 m-0 justify-content-center intro-wrap align-items-center">
+  <div id="intro" class="row p-0 m-4 intro-wrap align-items-center">
     <div class="col-12 intro-bg m-0 p-0">
-      <div class="intro-bg-row bg1"></div>
-      <div class="intro-bg-row bg2"></div>
-      <div class="intro-bg-row bg3"></div>
-      <div class="intro-bg-row bg2"></div>
-      <div class="intro-bg-row bg3"></div>
     </div>
-    <div class="col-lg-4 p-0 m-0 text-center intro-content">
+    <div class="col-lg-6 p-0 m-0 text-center intro-content">
       <div class="row">
-        <div class="col-12 p-5">
+        <div class="col-7 p-0">
           <img class="logo" src="img/Logo_White.png" alt="Kevin Wong">
-          <h2> I am a </h2>
-          <a class="text-center" href="#Designer">
+          <h2> My name is Kevin. I am a </h2>
+        </div>
+        <div class="col-5 p-0 text-left">
+          <a href="#Designer">
             <h1>Designer</h1>
           </a>
           <a href="#Maker">
             <h1>Maker</h1>
           </a>
+          <a href="#Maker">
+            <h1>Creator</h1>
+          </a>
           <a href="#Ideas Man">
-            <h1>Ideas Man</h1>
+            <h1>Creative Thinker</h1>
           </a>
           <a href="#Canadian">
             <h1>Canadian</h1>
@@ -75,9 +68,15 @@
 
   <div class="container p-0">
     <div id="Designer" class="row m-0 p-0">
-      <div class="col-12 p-1">
+      <div class="col-12 p-1 float-right">
         <h1>I am a Designer</h1>
-        <p>The beginning of being a designer stems all the way back into university, when I applied for the School of Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that even after graduating and began working as a UX Designer in Rakuten Inc, it's not enough. It's became a habit for me to look at objects and experience around me and wonder how I could improve the experience even better. </p>
+        <p>The beginning of being a designer stems back into university, when I applied for the School of Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that after graduation I pursued a career in UX Design. The pursuit eventually led to work as a UX Designer in Rakuten Inc.</p>
+      </div>
+
+      <div class="col-6 p-1 text-right">
+        Over the course of 4 years, I was able to polish my skills in UX. From user-research to facilitating growth-hack workshops, I was doing what I had wished to do. To make  the abundance of resource and opportunities led me to eventually take on as UX lead in creating a new service called Rakuten Wallet.
+        <br/>
+        <a href="#">Read more about Rakuten Wallet</a>
       </div>
       <div class="col-sm-6 col-md-4 p-1">
         <div class="card tile">
@@ -96,7 +95,7 @@
           <div class="tile-body">
             <img class="tile-bg" src="img/reportbg.JPG" alt="">
             <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
+              <h5 class="card-title badge-personal">Rakuten Point Gift Card</h5>
               <p class="card-text tile-text"> This is the description area.</p>
               <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
             </div>
@@ -108,55 +107,7 @@
           <div class="tile-body">
             <img class="tile-bg" src="img/reportbg.JPG" alt="">
             <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
-              <p class="card-text tile-text"> This is the description area.</p>
-              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 p-1">
-        <div class="card tile">
-          <div class="tile-body">
-            <img class="tile-bg" src="img/reportbg.JPG" alt="">
-            <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
-              <p class="card-text tile-text"> This is the description area.</p>
-              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 p-1">
-        <div class="card tile">
-          <div class="tile-body">
-            <img class="tile-bg" src="img/reportbg.JPG" alt="">
-            <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">Rakuten Wallet</h5>
-              <p class="card-text tile-text"> This is the description area.</p>
-              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 p-1">
-        <div class="card tile">
-          <div class="tile-body">
-            <img class="tile-bg" src="img/reportbg.JPG" alt="">
-            <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">6</h5>
-              <p class="card-text tile-text"> This is the description area.</p>
-              <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 p-1">
-        <div class="card tile">
-          <div class="tile-body">
-            <img class="tile-bg" src="img/reportbg.JPG" alt="">
-            <div class="card-body tile-text-wrapper p-1">
-              <h5 class="card-title badge-personal">6</h5>
+              <h5 class="card-title badge-personal">Rakuten Lingvist</h5>
               <p class="card-text tile-text"> This is the description area.</p>
               <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
             </div>
@@ -168,14 +119,14 @@
     <div id="Maker" class="row m-0 ">
       <div class="col-12 p-1">
         <h1>I am a Maker</h1>
-        <p>Studying for the Bachelor of Arts in Design and Media at SFU, one of the things I loved to do the most was to tinker electronics for the assignments. At work after I go home and tuck my kids to sleep I'd go to my ittle workshop and work away on some little project.</p>
+        <p> One of the things I loved to do the most while studying for the Bachelor of Arts at SFU was to tinker electronics for the assignments. After graduation that passion of making things never died that it has become one of the many hobbies of mine that I partake and make things that hasn't existed yet.</p>
       </div>
     </div>
 
-    <div id="Ideasr" class="row m-0 ">
+    <div id="Seeker" class="row m-0 ">
       <div class="col-12 p-1">
-        <h1>I am an Ideas Man</h1>
-        <p>Since I had graduated, I had started bringing booklets with me everywhere I go when I can because once I have an Idea I would jot it down. After my second book, I am slowly transiting over to my tablet.</p>
+        <h1>I am a Problem Seeker</h1>
+        <p>Whether it is waiting in line at the cafeteria at work, or just living in a small apartment in Japan, I see something that needs improvement and I would act upon how I could possibly improve the experience. </p>
       </div>
     </div>
 

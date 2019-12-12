@@ -3,8 +3,10 @@ body {
 	color: #333333;
 }
 
-h1 {
-	text-align: center;
+#nav{
+	position: absolute;
+	right: 20px;
+	height: 100vh;
 }
 
 #intro {
@@ -49,6 +51,7 @@ h1 {
 }
 
 .intro-content {
+	height: 80%;
 	background-color: rgba(0, 0, 0, .8);
 	border: 1px solid #dddddd;
 	color: #dddddd;
