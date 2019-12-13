@@ -1,12 +1,46 @@
 body {
-	background-color: #efefef;
+	position: relative;
+	background-color: #cc2222;
 	color: #333333;
+	padding: 0;
+	margin: 0;
+	perspective: 3000px;
+}
+
+#bodyMain{
+	position:fixed;
+	transform: rotateY(40deg);
+	transform-style: preserve-3d;
+	width: 100%;
+	animation: bodyMove 2s infinite alternate;
+}
+
+@keyframes bodyMove{
+	from{ transform: rotateY(0deg);}
+	to { transform: rotateY(60deg);}
 }
 
 #nav{
-	position: absolute;
-	right: 20px;
-	height: 100vh;
+	position: fixed;
+	left: 0px;
+	top:0px;
+	height: 100%;
+	border: 1px solid #333333;
+	transform-style: preserve-3d;
+	transform: rotateY(-90deg) translate3D(-75px,0,71px);
+	background-color: #999999;
+}
+
+#nav .menu-item{
+	height: 20%;
+}
+
+#content-wrapper{
+background-color: #ffffff;
+transform: rotateY(00deg) translateX(0px);
+transform-style: preserve-3d;
+border: 1px solid #333333;
+width: 100%;
 }
 
 #intro {
@@ -26,30 +60,6 @@ body {
 	padding: 0;
 }
 
-.intro-bg-row {
-	display: block;
-	height: 20%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bg1 {
-	background-image: url("../img/reportbg.JPG");
-}
-
-.bg2 {
-	background-image: url("../img/spatial.jpg");
-}
-
-.bg3 {
-	background-image: url("../img/YDKM.jpg");
-}
-
 .intro-content {
 	height: 80%;
 	background-color: rgba(0, 0, 0, .8);
@@ -60,30 +70,6 @@ body {
 .intro-content h2 {
 	font-weight: 200;
 	color: #aaaaaa;
-}
-
-.intro-content .profile {
-	width: 100%;
-	filter: brightness(70%)
-}
-
-.navigation {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background-color: #ffffff;
-	padding: 16px;
-	z-index: 10;
-	perspective: 100px;
-	transform: rotateY(30);
-}
-
-.navigation h3 {
-	display: inline-block;
-}
-
-.navigation .nav-list {
-	display: inline-block;
 }
 
 .logo {
