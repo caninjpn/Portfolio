@@ -51,6 +51,10 @@ width: 100%;
 
 }
 
+#intro h1{
+	font-size: 1.4em;
+}
+
 .intro-bg {
 	position: absolute;
 	left: 0;
