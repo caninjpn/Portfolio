@@ -24,7 +24,11 @@
 </head>
 
 <body onLoad="windowCheck()">
-  <div id="bodyMain">
+  <div id="bodyMain" class="bodyMain">
+    
+    <div id="menu_btn" class="menu_btn">
+      MENU
+    </div>
     <!--Navigation-->
     <div id="nav" class="text-right p-3">
       <div class="menu-item"><a href="#">Kevin Wong</a></div>
@@ -68,58 +72,24 @@
 
       <div class="container p-0">
         <div id="Designer" class="row m-0 p-0">
-          <div class="col-12 p-1 float-right">
+          <div class="col-12 p-1 text-center">
             <h1>I am a Designer</h1>
             <p>The beginning of being a designer stems back into university, when I applied for the School of
-              Interactive
-              Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that after
-              graduation I pursued a career in UX Design. The pursuit eventually led to work as a UX Designer in Rakuten
-              Inc.</p>
+              Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that
+              after graduation I pursued a career in UX Design. The pursuit eventually led to work as a UX Designer in
+              Rakuten Inc.</p>
           </div>
 
-          <div class="col-6 p-1 text-right">
-            Over the course of 4 years, I was able to polish my skills in UX. From user-research to facilitating
-            growth-hack workshops, I was doing what I had wished to do. To make the abundance of resource and
-            opportunities led me to eventually take on as UX lead in creating a new service called Rakuten Wallet.
-            <br />
-            <a href="#">Read more about Rakuten Wallet</a>
+          <div class="col-12 p-1 text-center">
+            One of the hallmark product I released was Rakuten Wallet, launched in April 2019. It's a Cryptocurrency trading service within Rakuten.</div> 
+            
+            <div class="col-12 p-1 text-center">We began with a working Proof-of-concept prototype in 3 months time in order for the project to be greenlit for commercialization.</div>
           </div>
-          <div class="col-sm-6 col-md-4 p-1">
-            <div class="card tile">
-              <div class="tile-body">
-                <img class="tile-bg" src="img/reportbg.JPG" alt="">
-                <div class="card-body tile-text-wrapper p-1">
-                  <h5 class="card-title badge-work">Rakuten Wallet</h5>
-                  <p class="card-text tile-text"> This is the description area.</p>
-                  <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-                </div>
-              </div>
-            </div>
+          <div class="col-12 p-1 text-center">After the PoC ended with an overwhelmingly positive feedback.
           </div>
-          <div class="col-sm-6 col-md-4 p-1">
-            <div class="card tile">
-              <div class="tile-body">
-                <img class="tile-bg" src="img/reportbg.JPG" alt="">
-                <div class="card-body tile-text-wrapper p-1">
-                  <h5 class="card-title badge-personal">Rakuten Point Gift Card</h5>
-                  <p class="card-text tile-text"> This is the description area.</p>
-                  <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 p-1">
-            <div class="card tile">
-              <div class="tile-body">
-                <img class="tile-bg" src="img/reportbg.JPG" alt="">
-                <div class="card-body tile-text-wrapper p-1">
-                  <h5 class="card-title badge-personal">Rakuten Lingvist</h5>
-                  <p class="card-text tile-text"> This is the description area.</p>
-                  <a class="tile-link" href="https://www.rakuten-wallet.com">Link here</a>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="col-12">from various stakeholders we held a 2-day workshop to align the project members of the business team, the creative team, and the development team on what product we are building for.</div>
+          <div class="col-12">In the midst of development, I noticed miscommunication had begun to slow development and did a quick investigation to realize that there was no set workflow/ verification check of the production. I immediately held an emergency meeting with all the stakeholders to identify the problem and set out a solution to prevent further errors amongst each other. Since then development continued without a hitch.</div>
+          <div class="col-12">There are other stories but that'll be for another time. <a href="#"> Tell me more. </a></div>
         </div>
 
         <div id="Maker" class="row m-0 ">
@@ -166,6 +136,14 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById("menu_btn").addEventListener("click", showMenu,false);
+        
+    function showMenu(){
+      $('#bodyMain').toggleClass('menuOpen');
+        }
+  </script>
 </body>
 
 </html>

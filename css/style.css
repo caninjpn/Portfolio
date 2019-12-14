@@ -1,33 +1,46 @@
 body {
 	position: relative;
-	background-color: #cc2222;
+	background-color: #232323;
 	color: #333333;
 	padding: 0;
 	margin: 0;
 	perspective: 3000px;
+	overflow: hidden;
 }
 
-#bodyMain{
+.bodyMain{
 	position:fixed;
-	transform: rotateY(40deg);
+	transform-origin: 70% 0;
 	transform-style: preserve-3d;
+	transform: rotateY(0deg) translateX(0px);
 	width: 100%;
-	animation: bodyMove 2s infinite alternate;
+	height: 100vh;
+	transition: all 2s;
 }
 
-@keyframes bodyMove{
-	from{ transform: rotateY(0deg);}
-	to { transform: rotateY(60deg);}
+.menuOpen{
+	transform: rotateY(-60deg) translateX(-125px);
+}
+
+.menu_btn{
+	position: fixed;
+	top: 0;
+	right: 2px;
+	width: 55px;
+	height: 50px;
+	background-color: #aaaaaa;
+	border: 1px solid #999999;
+	border-radius: 25px 0px 0px 25px;
+	transform: translateZ(20px);
 }
 
 #nav{
 	position: fixed;
-	left: 0px;
+	right: 0px;
 	top:0px;
 	height: 100%;
-	border: 1px solid #333333;
 	transform-style: preserve-3d;
-	transform: rotateY(-90deg) translate3D(-75px,0,71px);
+	transform: rotateY(90deg) translate3D(75px,0,71px);
 	background-color: #999999;
 }
 
@@ -35,12 +48,20 @@ body {
 	height: 20%;
 }
 
+#nav a{
+	color: #333333;
+}
+
 #content-wrapper{
+	position: fixed;
 background-color: #ffffff;
 transform: rotateY(00deg) translateX(0px);
 transform-style: preserve-3d;
 border: 1px solid #333333;
 width: 100%;
+height: 100vh;
+overflow-y: scroll;
+overflow-x: hidden;
 }
 
 #intro {
