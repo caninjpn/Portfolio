@@ -15,7 +15,7 @@ body {
 	transform: rotateY(0deg) translateX(0px);
 	width: 100%;
 	height: 100vh;
-	transition: all 2s;
+	transition: all .6s;
 }
 
 .menuOpen{
@@ -90,21 +90,25 @@ overflow-x: hidden;
 	background-color: rgba(0, 0, 0, .8);
 	border: 1px solid #dddddd;
 	color: #dddddd;
+	transform-style: preserve-3d;
 }
 
 .intro-content h2 {
 	font-weight: 200;
 	color: #aaaaaa;
+	transform-style: preserve-3d;
 }
 
 .logo {
 	display: inline-block;
 	width: 50px;
+	transform-style: preserve-3d;
 }
 
 #intro a {
 	color: #ffffff;
 	text-decoration: underline;
+	transform-style: preserve-3d;
 }
 
 a:link {
@@ -183,4 +187,15 @@ a:active {
 	font-size: 14px;
 	color: #ffffff;
 	background-color: #339933;
+}
+
+/* Layers */
+.lay-1{
+	transform: translateZ(10px);
+}
+.lay-2{
+	transform: translateZ(35px);
+}
+.lay-3{
+	transform: translateZ(20px);
 }
