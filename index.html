@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="animate.min.css">
 
   <title>Kevin Wong - Striving to improve</title>
 
@@ -25,7 +25,7 @@
 
 <body onLoad="windowCheck()">
   <div id="bodyMain" class="bodyMain">
-    
+
     <div id="menu_btn" class="menu_btn lay-3">
       MENU
     </div>
@@ -44,11 +44,11 @@
         </div>
         <div class="col-lg-6 p-0 m-0 text-center intro-content">
           <div class="row  lay-1">
-            <div class="col-7 p-0">
+            <div class="col-sm-7 p-1">
               <img class="logo" src="img/Logo_White.png" alt="Kevin Wong">
               <h2> My name is Kevin. I am a </h2>
             </div>
-            <div class="col-5 p-0 text-left lay-2">
+            <div class="col-sm-5 p-1 text-left lay-2">
               <a href="#Designer">
                 <h1>Designer</h1>
               </a>
@@ -73,6 +73,7 @@
       <div class="container p-0 lay-1">
         <div id="Designer" class="row m-0 p-0 lay-2">
           <div class="col-12 p-1 text-center">
+            <div class="image-wrapper"><img class="image" src="img/SFU.JPG" alt="Designer" /></div>
             <h1>I am a Designer</h1>
             <p>and the beginning of becoming stems back into university, when I applied for the School of
               Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that
@@ -81,23 +82,29 @@
           </div>
 
           <div class="col-12 p-1 text-center">
-            One of the hallmark product I released was Rakuten Wallet, launched in April 2019. It's a Cryptocurrency trading service within Rakuten.</div> 
-            
-            <div class="col-12 p-1 text-center">We began with a working Proof-of-concept prototype in 3 months time in order for the project to be greenlit for commercialization.</div>
-          </div>
-          <div class="col-12 p-1 text-center">After the PoC ended with an overwhelmingly positive feedback. But even so, it was only just the beginning.
-          </div>
-            <div class="col-12 p-1 text-center">We immediately held a 2-day workshop to align the project members of the business team, the creative team, and the development team on what product we are building for.</div>
-            
-            <div class="col-12 p-1 text-center">As a result of the workshop, we identified our development direction to focus on creating an app that people can do some basic trading with cryptocurrency.</div>
+            One of the hallmark product I released was Rakuten Wallet, launched in April 2019. It's a Cryptocurrency
+            trading service within Rakuten.</div>
 
-            <div class="col-12 p-1">Based on that information I created personas and customer journey maps to affirm with the stakeholders how users will experience the app.</div>
+          <div class="col-12 p-1 text-center">
+              <div class="image-wrapper"><img class="image" src="img/Crypto/workshop.JPG" alt="workshop" /></div>
+              We began with a 2-day workshop to align the project members of the
+            business team, the creative team, and the development team on what product we are building for.</div>
 
-            <div class="col-12 p-1">After a few more meetings, we have confirmed the foundation and finally stepped into developing the app. Working closely with members of the app development team and the UI Designer we worked on the app and completed the app on-time despite several modifications of the criteria along the way.</div>
+          <div class="col-12 p-1 text-center">As a result of the workshop, we identified our development direction to
+            focus. With everyone's consensus I created personas and customer journey maps to affirm with
+            the stakeholders how users will experience the app.</div>
 
-            <div class="col-12 p-1">This is Rakuten Wallet, a cryptocurrency app where a user can do simple cryptocurrency exchange on a easy-to-use interface. The design is based on a physical wallet, where each card represents a cryptocurrency and is initially stacked in a way where you can peek at the status of your cryptocurrency balance.</div>
+          <div class="col-12 p-1">After a few more meetings and polishing the CJM we stepped into
+            developing the app. Working closely with members of the app development team and the UI Designer we worked
+            on the app and completed the app on-time despite several modifications of the criteria along the way.</div>
 
-          <div class="col-12">There are more works I could present but that'll be for another time. <a href="#"> Tell me more. </a></div>
+          <div class="col-12 p-1">This is Rakuten Wallet, a cryptocurrency app where a user can do simple cryptocurrency
+            exchange on a easy-to-use interface. The design is based on a physical wallet, where each card represents a
+            cryptocurrency and is initially stacked in a way where you can peek at the status of your cryptocurrency
+            balance.</div>
+
+          <div class="col-12">There are more works I could present but that'll be for another time. <a href="#"> Tell me
+              more. </a></div>
         </div>
 
         <div id="Maker" class="row m-0 ">
@@ -122,7 +129,9 @@
           <div class="col-12 p-1">
             <h1>I am a Canadian</h1>
             <span class="col-10">
-              <p> My blood runs in Maple Syrup and I love going to Tim Horton's for a nice double-double (Coffee with 2 cream, 2 sugar). I am currently working in Japan, married with 2 awesome sons. If you're interested follow me on Instagram.
+              <p> My blood runs in Maple Syrup and I love going to Tim Horton's for a nice double-double (Coffee with 2
+                cream, 2 sugar). I am currently working in Japan, married with 2 awesome sons. If you're interested
+                follow me on Instagram.
               </p>
             </span>
           </div>
@@ -134,18 +143,18 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="js/bootstrap.min.js"></script>
 
   <script>
-    document.getElementById("menu_btn").addEventListener("click", showMenu,false);
-        
-    function showMenu(){
+    document.getElementById("menu_btn").addEventListener("click", showMenu, false);
+
+    function showMenu() {
       $('#bodyMain').toggleClass('menuOpen');
-        }
+    }
   </script>
 </body>
 
