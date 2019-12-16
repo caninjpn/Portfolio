@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	background-color: #232323;
+	background-color: #ffffff;
 	color: #333333;
 	padding: 0;
 	margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 .bodyMain{
-	position:fixed;
+	position:fixed; 
 	transform-origin: 70% 0;
 	transform-style: preserve-3d;
 	transform: rotateY(0deg) translateX(0px);
@@ -69,7 +69,11 @@ overflow-x: hidden;
 	min-height: 600px;
 	height: 100vh;
 	max-height: 100%;
+	overflow: hidden;
+}
 
+.profilePic{
+	width: 100%;
 }
 
 #intro h1{
@@ -86,16 +90,15 @@ overflow-x: hidden;
 }
 
 .intro-content {
-	height: 80%;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: #ffffff;
 	border: 1px solid #dddddd;
-	color: #dddddd;
+	color: #333333;
 	transform-style: preserve-3d;
 }
 
 .intro-content h2 {
 	font-weight: 200;
-	color: #aaaaaa;
+	color: #333333;
 	transform-style: preserve-3d;
 }
 
@@ -106,7 +109,7 @@ overflow-x: hidden;
 }
 
 #intro a {
-	color: #ffffff;
+	color: #333333;
 	text-decoration: underline;
 	transform-style: preserve-3d;
 }
