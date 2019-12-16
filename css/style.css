@@ -76,18 +76,6 @@ overflow-x: hidden;
 	width: 100%;
 }
 
-#intro h1{
-	font-size: 1.4em;
-}
-
-.intro-bg {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
 
 .intro-content {
 	background-color: #ffffff;
@@ -125,15 +113,4 @@ a:active {
 
 .image{
 	width: 100%;
-}
-
-/* Layers */
-.lay-1{
-	transform: translateZ(10px);
-}
-.lay-2{
-	transform: translateZ(35px);
-}
-.lay-3{
-	transform: translateZ(20px);
 }
