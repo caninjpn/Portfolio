@@ -25,15 +25,6 @@
 
 <body onLoad="windowCheck()">
   <div id="bodyMain" class="bodyMain">
-
-  <!--Navigation-->
-  <div id="nav" class="text-right p-3 sticky">
-    <div class="menu-item"><a href="#">Kevin Wong</a></div>
-    <div class="menu-item"><a href="#">Designer</a></div>
-    <div class="menu-item"><a href="#">Creator</a></div>
-    <div class="menu-item"><a href="#">Creative Thinker</a></div>
-    <div class="menu-item"><a href="#">Canadian</a></div>
-  </div>
     <div id="menu_btn" class="menu_btn">
       MENU
     </div>
@@ -55,11 +46,8 @@
               <a href="#Maker">
                 <h1>Maker</h1>
               </a>
-              <a href="#Creator">
-                <h1>Creator</h1>
-              </a>
-              <a href="#Ideas Man">
-                <h1>Creative Thinker</h1>
+              <a href="#Seeker">
+                <h1>Problem Seeker</h1>
               </a>
               <a href="#Canadian">
                 <h1>Canadian</h1>
@@ -74,7 +62,7 @@
 
       <div id="Designer" class="wow row m-0 p-0  animated fadeInLeft windowHeight">
         <div class="col-12 p-0 m-0 text-center">
-          <h1>I am a Designer</h1>
+          <h1><span id="link1"><a href="#Designer">I am a Designer</a></span><span class="title1">I am a Designer</span></h1>
           <p>and the beginning of becoming stems back into university, when I applied for the School of
             Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that
             after graduation I pursued a career in UX Design. The pursuit eventually led to work as a UX Designer in
@@ -151,9 +139,15 @@
 
   <script>
     document.getElementById("menu_btn").addEventListener("click", showMenu, false);
-
+    document.getElementById("link1").addEventListener("click", showMenu, false);
     function showMenu() {
-      $('#bodyMain').toggleClass('menuOpen');
+      $('#intro').toggleClass('menuOpen').toggleClass('menu1');
+      $('#Designer').toggleClass('menuOpen', 1000 ,"easeOutSine").toggleClass('menu2', 1000 ,"easeOutSine");
+      $('.link1').toggle();
+      $('.title1').toggle();
+      $('#Maker').toggleClass('menuOpen', 1000 ,"easeOutSine").toggleClass('menu3', 1000 ,"easeOutSine");
+      $('#Seeker').toggleClass('menuOpen', 1000 ,"easeOutSine").toggleClass('menu4', 1000 ,"easeOutSine");
+      $('#Canadian').toggleClass('menuOpen', 1000 ,"easeOutSine").toggleClass('menu5', 1000 ,"easeOutSine");
     }
   </script>
   <script src="node_modules/wow.js/dist/wow.min.js"></script>
