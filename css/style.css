@@ -4,91 +4,60 @@ body {
 	color: #333333;
 	padding: 0;
 	margin: 0;
-	perspective: 3000px;
 }
 
-.windowHeight{
+.windowHeight {
 	scroll-snap-align: start;
 }
 
-.bodyMain{
-	transform-origin: 70% 0;
-	transform-style: preserve-3d;
-	transform: rotateY(0deg) translateX(0px);
-	width: 100%;
-	transition: all .6s;
-}
-
-#Designer, #Creator, #Maker, #Canadian, #Seeker{
+#Designer,
+#Creator,
+#Maker,
+#Canadian,
+#Seeker {
 	background-color: #ffffff;
 	transition: 2s;
 }
 
-.menuOpen{
+.menu1 {
 	position: absolute;
+	top: 0;
 }
 
-.menu1{
-	top:0;
-}
-
-.link1{
+.link1 {
 	display: none;
 }
-.menu2{
+
+.menu2 {
+	position: absolute;
 	top: 20%;
 }
 
-.menu3{
+.menu3 {
+	position: absolute;
 	top: 40%;
 }
 
-.menu4{
+.menu4 {
+	position: absolute;
 	top: 60%;
 }
 
-.menu5{
+.menu5 {
+	position: absolute;
 	top: 80%;
 }
 
-.menu_btn{
+.menu_btn {
 	position: fixed;
-	top: 0;
-	right: 2px;
+	bottom: 0;
+	z-index: 10;
+	right: 20px;
 	width: 55px;
 	height: 50px;
-	background-color: #aaaaaa;
-	border: 1px solid #999999;
-	border-radius: 25px 0px 0px 25px;
-	transform: translateZ(20px);
-}
-
-.sticky{
-	position: fixed;
-	right: 0px;
-	top:0px;
-	transform-style: preserve-3d;
-	transform: rotateY(90deg) translate3D(75px,0,71px);
-	background-color: #999999;
-}
-
-#nav .menu-item{
-	height: 20%;
-}
-
-#nav a{
-	color: #333333;
-}
-
-#content-wrapper{
-	position: fixed;
-background-color: #ffffff;
-transform: rotateY(00deg) translateX(0px);
-transform-style: preserve-3d;
-border: 1px solid #333333;
-width: 100%;
-height: 100vh;
-scroll-snap-type: y proximity;
+	padding-top: 15px;
+	background-color: #54c930;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #intro {
@@ -99,7 +68,7 @@ scroll-snap-type: y proximity;
 	overflow: hidden;
 }
 
-.profilePic{
+.profilePic {
 	width: 100%;
 }
 
@@ -138,6 +107,6 @@ a:active {
 	text-decoration: underline;
 }
 
-.image{
+.image {
 	width: 100%;
 }
