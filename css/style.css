@@ -5,16 +5,17 @@ body {
 	padding: 0;
 	margin: 0;
 	perspective: 3000px;
-	overflow: hidden;
+}
+
+.windowHeight{
+	scroll-snap-align: start;
 }
 
 .bodyMain{
-	position:fixed; 
 	transform-origin: 70% 0;
 	transform-style: preserve-3d;
 	transform: rotateY(0deg) translateX(0px);
 	width: 100%;
-	height: 100vh;
 	transition: all .6s;
 }
 
@@ -34,11 +35,10 @@ body {
 	transform: translateZ(20px);
 }
 
-#nav{
+.sticky{
 	position: fixed;
 	right: 0px;
 	top:0px;
-	height: 100%;
 	transform-style: preserve-3d;
 	transform: rotateY(90deg) translate3D(75px,0,71px);
 	background-color: #999999;
@@ -60,8 +60,7 @@ transform-style: preserve-3d;
 border: 1px solid #333333;
 width: 100%;
 height: 100vh;
-overflow-y: scroll;
-overflow-x: hidden;
+scroll-snap-type: y proximity;
 }
 
 #intro {

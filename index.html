@@ -26,20 +26,20 @@
 <body onLoad="windowCheck()">
   <div id="bodyMain" class="bodyMain">
 
+  <!--Navigation-->
+  <div id="nav" class="text-right p-3 sticky">
+    <div class="menu-item"><a href="#">Kevin Wong</a></div>
+    <div class="menu-item"><a href="#">Designer</a></div>
+    <div class="menu-item"><a href="#">Creator</a></div>
+    <div class="menu-item"><a href="#">Creative Thinker</a></div>
+    <div class="menu-item"><a href="#">Canadian</a></div>
+  </div>
     <div id="menu_btn" class="menu_btn">
       MENU
     </div>
-    <!--Navigation-->
-    <div id="nav" class="text-right p-3">
-      <div class="menu-item"><a href="#">Kevin Wong</a></div>
-      <div class="menu-item"><a href="#">Designer</a></div>
-      <div class="menu-item"><a href="#">Creator</a></div>
-      <div class="menu-item"><a href="#">Creative Thinker</a></div>
-      <div class="menu-item"><a href="#">Canadian</a></div>
-    </div>
     <!--Body Start-->
     <div id="content-wrapper">
-      <div id="intro" class="row p-0 m-0 intro-wrap align-items-center">
+      <div id="intro" class="row p-0 m-0 intro-wrap align-items-center windowHeight">
         <div class="col-12 intro-bg m-0 p-0">
         </div>
         <div class="col-sm-6 p-0 m-0 text-center justify-content-center intro-content">
@@ -72,9 +72,8 @@
         </div>
       </div>
 
-      <div id="Designer" class="row m-0 p-0  animated fadeInLeft">
+      <div id="Designer" class="wow row m-0 p-0  animated fadeInLeft windowHeight">
         <div class="col-12 p-0 m-0 text-center">
-          <div class="image-wrapper"><img class="image" src="img/SFU.JPG" alt="Designer" /></div>
           <h1>I am a Designer</h1>
           <p>and the beginning of becoming stems back into university, when I applied for the School of
             Interactive Arts and Technology at Simon Fraser University (SFU). The program nutured my interested that
@@ -87,7 +86,7 @@
           trading service within Rakuten.</div>
 
         <div class="col-12 p-1 text-center">
-          <div class=" animated fadeInLeftimage-wrapper"><img class="image" src="img/Crypto/workshop.JPG" alt="workshop" /></div>
+          <div class="wow animated fadeInLeftimage-wrapper"><img class="image" src="img/Crypto/workshop.JPG" alt="workshop" /></div>
           We began with a 2-day workshop to align the project members of the
           business team, the creative team, and the development team on what product we are building for.
         </div>
@@ -109,7 +108,7 @@
             more. </a></div>
       </div>
 
-      <div id="Maker" class="row m-0 ">
+      <div id="Maker" class="row m-0  windowHeight">
         <div class="col-12 p-1">
           <h1>I am a Maker</h1>
           <p> One of the things I loved to do the most while studying for the Bachelor of Arts at SFU was to tinker
@@ -118,7 +117,7 @@
         </div>
       </div>
 
-      <div id="Seeker" class="row m-0 ">
+      <div id="Seeker" class="row m-0  windowHeight">
         <div class="col-12 p-1">
           <h1>I am a Problem Seeker</h1>
           <p>Whether it is waiting in line at the cafeteria at work, or just living in a small apartment in Japan, I
@@ -127,7 +126,7 @@
         </div>
       </div>
 
-      <div id="Canadian" class="row m-0 ">
+      <div id="Canadian" class="row m-0  windowHeight">
         <div class="col-12 p-1">
           <h1>I am a Canadian</h1>
           <span class="col-10">
@@ -157,8 +156,8 @@
       $('#bodyMain').toggleClass('menuOpen');
     }
   </script>
-  <script src="node_modules/.js/dist/.min.js"></script>
-  <script> new ().init();</script>
+  <script src="node_modules/wow.js/dist/wow.min.js"></script>
+  <script> new WOW().init();</script>
 </body>
 
 </html>
