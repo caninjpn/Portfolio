@@ -19,33 +19,43 @@ body {
 	transition: 2s;
 }
 
-.menu1 {
-	position: absolute;
-	top: 0;
+#Menu{
+	position: fixed;
+	top: 100%;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
 }
 
-.link1 {
-	display: none;
+
+.menu-text{
+	display: inline-block;
+}
+
+.menu1, .menu2, .menu3, .menu4 {
+	height: 25%;
+	width: 100%;
+}
+.menu1 {
+	top: 100%;
+	background-color: #aa0000;
 }
 
 .menu2 {
-	position: absolute;
-	top: 20%;
+	top: 125%;
+	background-color: #00aa00;
 }
 
 .menu3 {
-	position: absolute;
-	top: 40%;
+	top: 150%;
+	background-color: #0000aa;
 }
 
 .menu4 {
-	position: absolute;
-	top: 60%;
-}
-
-.menu5 {
-	position: absolute;
-	top: 80%;
+	top: 175%;
+	background-color: #aaaa00;
 }
 
 .menu_btn {
