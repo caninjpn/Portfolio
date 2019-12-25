@@ -11,11 +11,10 @@ function showMenu() {
     $('#Menu').animate({
         top: 0
     }, 1000, function (animatemenu) {});
-    
 }
 
 function animatemenu(){
-    $('.menu1').animate({
+    $('#menu1').animate({
         top: 0
     }, 2000, function () {});
 }
