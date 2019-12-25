@@ -1,3 +1,15 @@
+window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+    window.requestAnimationFrame(updateLax)
+    this.windowCheck();
+}
+
 document.getElementById("menu_btn").addEventListener("click", showMenu, false);
 
 function windowCheck() {
