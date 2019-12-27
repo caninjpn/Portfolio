@@ -14,6 +14,12 @@ li {
 	scroll-snap-align: start;
 }
 
+.row{
+	width: 100%;
+	overflow: hidden;
+	scroll-snap-type: mandatory;
+}
+
 .row:after {
 	margin-bottom: 80px;
 }
@@ -28,7 +34,9 @@ li {
 		0 33px 77px rgba(0, 0, 0, 0.24);
 }
 
-
+.is_sp{
+	display: none;
+}
 .caption-bg{
 	padding: 2rem;
 	background-color: rgba(255, 255, 255, .9);
@@ -44,13 +52,30 @@ li {
 }
 
 
-#Designer {
-	background-image: url('../img/Crypto/workshop.JPG');
+#d-intro {
+	background-image: url('../img/SFU.JPG');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+#d-paragraph1{
+	background-image: url('../img/RWallet.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#d-paragraph2{
+	background-image: url('../img/Crypto/workshop2.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 
 #Maker{
 	background-image: url('../img/lamp.jpg');
@@ -184,4 +209,11 @@ a:active {
 
 .image {
 	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+.is_sp{
+	display: inline-block;
+}
 }
