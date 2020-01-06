@@ -1,3 +1,5 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
 body {
 	position: relative;
 	background-color: #ffffff;
@@ -164,6 +166,12 @@ li {
 	height: 100vh;
 	max-height: 100%;
 	overflow: hidden;
+}
+
+#intro h3::after{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "   \f054";
+	font-size: 1rem;
+	color: #dddddd;
 }
 
 .profilePic {
