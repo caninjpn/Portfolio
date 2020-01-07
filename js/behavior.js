@@ -16,7 +16,7 @@ function windowCheck() {
     var h = window.innerHeight;
     $('#intro').css("height", h);
     $('#nav').css("height", h);
-    $('.row').css("min-height", h);
+ //   $('.row').css("min-height", h);
 }
 
 function showMenu() {
