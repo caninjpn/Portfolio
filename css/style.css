@@ -65,7 +65,7 @@ li {
 }
 
 .intro-wrap {
-	background-image: linear-gradient(to bottom right, rgba(15, 134, 222, .8), rgba(58, 172, 50, .8)), url("../img/profile.jpg");
+	background-image: linear-gradient(to bottom right, rgb(5, 25, 90), rgb(54, 25, 219));
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -73,9 +73,10 @@ li {
 }
 
 .big-text{
-	font-size: 9rem;
+	font-size: 7rem;
 	color:#ffffff;
 	font-weight: 300;
+	text-align: center;
 }
 
 #intro {
@@ -94,18 +95,34 @@ li {
 	color: #dddddd;
 }
 
+#Lingvist {
+	background-image: url("../img/Crypto/Results/DSC_0155.JPG");
+	background-size: cover;
+	animation-delay: 0s;
+}
+
 #Wallet {
 	background-image: url("../img/Crypto/Results/DSC_0155.JPG");
 	background-size: cover;
+	animation-delay: .2s;
 }
 
 #GiftCard {
 	background-image: url("../img/PGC/Top_PC_new.png");
 	background-size: cover;
+	animation-delay: .4s;
 }
 
-.d-works {
-	width: 100%;
+#Members {
+	background-image: url("../img/PGC/Top_PC_new.png");
+	background-size: cover;
+	animation-delay: .6s;
+}
+
+#Cutter{
+	background-image: url("../img/PGC/Top_PC_new.png");
+	background-size: cover;
+	animation-delay: .8s;
 }
 
 .works-row {
@@ -168,5 +185,12 @@ a:active {
 
 	.is_sp {
 		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+	.big-text {
+		font-size: 4rem;
 	}
 }
