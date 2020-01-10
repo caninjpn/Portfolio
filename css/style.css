@@ -1,6 +1,11 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap');
 
+.delay-1-5s {animation-delay: 1.5s;}
+.delay-1-7s {animation-delay: 1.7s;}
+.delay-1-9s {animation-delay: 1.9s;}
+.delay-2-1s {animation-delay: 2.1s;}
+
 body {
 	position: relative;
 	background-color: #ffffff;
@@ -8,6 +13,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Oxygen', sans-serif;
+	scroll-snap-type: y proximity;
 }
 
 li {
@@ -42,39 +48,17 @@ li {
 	display: none;
 }
 
-.caption-bg {
-	padding: 2rem;
-	background-color: rgba(255, 255, 255, .9);
-}
-
-
-#Designer {
-	background-image: url('../img/SFU.JPG');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
-#Maker {
-	background-image: url('../img/lamp.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
 .intro-wrap {
-	background-image: linear-gradient(to bottom right, rgb(5, 25, 90), rgb(54, 25, 219));
+	background-image: linear-gradient(to top right, rgb(0, 20, 20), rgb(54, 25, 219));
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-.big-text{
+.big-text {
 	font-size: 7rem;
-	color:#ffffff;
+	color: #ffffff;
 	font-weight: 300;
 	text-align: center;
 }
@@ -85,15 +69,54 @@ li {
 	height: 100vh;
 	max-height: 100%;
 	overflow: hidden;
+	scroll-snap-align: start;
 }
 
-#intro h3::after {
+#intro h1::after {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	content: "   \f054";
 	font-size: 1rem;
 	color: #dddddd;
 }
+
+#Designer {
+	background:
+		linear-gradient(to bottom right, rgba(0, 20, 20, 0.9),
+			rgba(54, 25, 219, 0.7)), url('../img/SFU.JPG');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	scroll-snap-align: start;
+}
+
+#Designer h3 {
+	color: #ffffff;
+}
+
+.caption-bg {
+	padding: 2rem;
+	background-color: rgba(200, 200, 200, .9);
+}
+
+#Maker {
+	background-image: url('../img/lamp.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	scroll-snap-align: start;
+}
+#Seeker {
+	background-image: url('../img/spatial.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	scroll-snap-align: start;
+}
+
 
 #Lingvist {
 	background-image: url("../img/Crypto/Results/DSC_0155.JPG");
@@ -119,7 +142,7 @@ li {
 	animation-delay: .6s;
 }
 
-#Cutter{
+#Cutter {
 	background-image: url("../img/PGC/Top_PC_new.png");
 	background-size: cover;
 	animation-delay: .8s;
@@ -143,7 +166,6 @@ li {
 
 .intro-content {
 	color: #eeeeee;
-	background-color: rgba(255, 255, 255, .4);
 }
 
 .intro-content h2 {
@@ -163,7 +185,7 @@ li {
 }
 
 #intro a {
-	color: #333333;
+	color: #0078ff;
 	text-decoration: none;
 
 }

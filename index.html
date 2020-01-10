@@ -17,31 +17,42 @@
 </head>
 
 <body>
+  <div id="menu-wrapper">
+    Test
+  </div>
+  <div id="content-wrapper">
   <div id="intro" class="row p-0 m-0 align-items-center justify-content-center c-shadow windowHeight intro-wrap">
     <div class="big-text animated fadeIn delay-1s">Kevin Wong</div>
     <div class="w-100"></div>
-    <div class="col-md-10 p-3 m-3 text-center intro-content">
-       <ul class="p-0 m-0">
+    <div class="col-md-5 p-3 m-3 text-center intro-content">
+      <ul class="p-0 m-0">
         <li>
-          <h1><a href="#Designer">UX Designer</a></h1>
+          <div class="animated fadeInUp delay-1-5s">
+            <h1><a href="#Designer">UX Designer</a></h1>
+          </div>
         </li>
         <li>
-          <h1><a href="#">Maker</a>
+          <div class="animated fadeInUp delay-1-7s">
+            <h1><a href="#Maker">Maker</a>
+          </div>
           </h1>
         </li>
         <li>
-          <h1><a href="#">Problem Seeker</a></h1>
+          <div class="animated fadeInUp delay-1-9s">
+            <h1><a href="#Seeker">Problem Seeker</a>
+          </div>
         </li>
         <li>
-          <h1><a href="#">Canadian</a></h1>
+          <div class="animated fadeInUp delay-2-1s">
+            <h1><a href="#Canadian">Canadian</a>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <div id="Designer" class="row p-0 m-0">
-    <div id="d-intro" class="row m-0 align-items-center justify-content-center windowHeight lax"
-      data-lax-anchor="#Designer" data-lax-opacity="800 0, 0 1">
+  <div id="Designer" class="row p-0 m-0 lax" data-lax-opacity="0 0, 800 1">
+    <div id="d-intro" class="row m-0 align-items-center justify-content-center windowHeight">
       <div class="col-sm-8 p-3 text-center rounded caption-bg lax" data-lax-translate-y="200 -300, vh-200 0">
         <h1><span id="title1">I am a UX Designer</span></h1>
         <p>and the beginning of becoming stems back into university, when I applied for the School of
@@ -49,13 +60,15 @@
           after graduation I pursued a career in UX Design, which eventually led to work as a UX Designer in
           Rakuten Inc.</p>
       </div>
-          
-      <div id="d-works" class="col-sm-12 p-0 text-center rounded align-items-start">
+
+      <div id="d-works" class="col-sm-12 p-0 mt-5 text-center rounded align-items-start">
         <h3>This is where the works are shown.</h3>
         <div class="row works-row p-0 m-0 justify-content-center">
-          <div id="Lingvist" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Lingvist: Powered by Rakuten</div>
+          <div id="Lingvist" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Lingvist: Powered by Rakuten
+          </div>
           <div id="Wallet" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Wallet</div>
-          <div id="GiftCard" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Point Gift Card</div>
+          <div id="GiftCard" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Point Gift Card
+          </div>
           <div id="Members" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Members Page</div>
           <div id="Cutter" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Cutter</div>
         </div>
@@ -66,27 +79,33 @@
   <div id="Maker" class="row p-0 m-0 pt-5 c-shadow windowHeight">
     <div id="m-intro" class="row m-0 align-items-center justify-content-center windowHeight">
       <div class="col-sm-8 p-3 text-center rounded caption-bg">
-          <h1>I am a Maker</h1>
-          <p> This is some of the side projects that I do during my free time.</p>
+        <h1>I am a Maker</h1>
+        <p>While working as a UX Designer professionally, I also take design as a hobby and make things. Some of these projects have been ongoing for years while some are one-offs as to experiment my hypothesis with things in my daily life.</p>
       </div>
-          
+
       <div id="m-works" class="col-sm-12 p-0 text-center rounded align-items-start">
-        <h3>This is where the Makers are done.</h3>
         <div class="row works-row p-0 m-0 justify-content-center">
-          <div id="Lingvist" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail lax" data-lax-preset="fadeIn"
-          data-lax-translate-y="50 0, 500 500" data-lax-anchor="#d-intro">Lingvist: Powered by Rakuten</div>
-          <div id="Wallet" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail lax" data-lax-preset="fadeIn"
-          data-lax-translate-y="40 0, 400 500" data-lax-anchor="#d-intro">Rakuten Wallet</div>
-          <div id="GiftCard" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail lax " data-lax-preset="fadeIn"
-          data-lax-translate-y="30 0, 300 500" data-lax-anchor="#d-intro">Rakuten Point Gift Card</div>
-          <div id="Members" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail lax " data-lax-preset="fadeIn"
-          data-lax-translate-y="20 0, 200 500" data-lax-anchor="#d-intro">Rakuten Members Page</div>
-          <div id="Cutter" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail lax " data-lax-preset="fadeIn"
-          data-lax-translate-y="10 0, 100 500" data-lax-anchor="#d-intro">Rakuten Cutter</div>
+          <div id="Lingvist" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Lingvist: Powered by Rakuten
+          </div>
+          <div id="Wallet" class="col-md-2 col-sm-5  p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Wallet</div>
+          <div id="GiftCard" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Point Gift Card
+          </div>
+          <div id="Members" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Members Page</div>
+          <div id="Cutter" class="col-md-2 col-sm-5 p-2 m-1 works-thumbnail wow fadeInUp">Rakuten Cutter</div>
         </div>
       </div>
     </div>
-   </div>
+  </div>
+  
+  <div id="Seeker" class="row p-0 m-0 pt-5 c-shadow windowHeight">
+    <div id="m-intro" class="row m-0 align-items-center justify-content-center windowHeight">
+      <div class="col-sm-8 p-3 text-center rounded caption-bg">
+        <h1>I am a Problem Seeker</h1>
+        <p>You can say this is a work-of-habit, but things have been on my mind on how to make things better. Whether it's the cafeteria at work, or living in a cramp room, I look at things and use it as a case study on what possible ways could be done to improve the standard of living.</p>
+      </div>
+      </div>
+  </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
@@ -95,8 +114,11 @@
   <script src="/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
   <script src="node_modules/lax.js/src/lax.js"></script>
   <script src="node_modules/wow.js/dist/WOW.js"></script>
-  <script>new WOW().init();</script>
+  <script>
+    new WOW().init();
+  </script>
   </script>
 </body>
+
 
 </html>
