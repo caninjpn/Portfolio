@@ -8,8 +8,8 @@
 
 body {
 	position: relative;
-	background-color: #ffffff;
-	color: #333333;
+	background-color: #333333;
+	color: #ffffff;
 	padding: 0;
 	margin: 0;
 	font-family: 'Oxygen', sans-serif;
@@ -58,7 +58,6 @@ li {
 
 .big-text {
 	font-size: 7rem;
-	color: #ffffff;
 	font-weight: 300;
 	text-align: center;
 }
@@ -91,17 +90,21 @@ li {
 	scroll-snap-align: start;
 }
 
-#Designer h3 {
-	color: #ffffff;
-}
-
 .caption-bg {
 	padding: 2rem;
-	background-color: rgba(200, 200, 200, .9);
+	background-color: rgba(200, 200, 200, .7);
+}
+
+.light{
+	color: #dddddd;
+}
+
+.dark{
+	color: #333333;
 }
 
 #Maker {
-	background-image: url('../img/lamp.jpg');
+	background-image: linear-gradient(to right, rgba(20, 20, 20,.9) 60%, rgba(20, 20, 20,0)), url('../img/lamp.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
