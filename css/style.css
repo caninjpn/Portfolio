@@ -13,21 +13,17 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Oxygen', sans-serif;
-	scroll-snap-type: y proximity;
+	perspective: 1000;
+	perspective-origin: center;
 }
 
 li {
 	list-style-type: none;
 }
 
-.windowHeight {
-	scroll-snap-align: start;
-}
-
 .row {
 	width: 100%;
 	overflow: hidden;
-	scroll-snap-type: start;
 }
 
 .row:after {
@@ -46,6 +42,19 @@ li {
 
 .is_sp {
 	display: none;
+}
+
+#menu-wrapper{
+	position: fixed;
+	width: 300px;
+	padding:25px;
+	background: rgba(255,255,255,.85);
+	z-index: 10;
+	
+	-webkit-transform-style: preserve-3d; /* Safari 3-8  */
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transform-origin: 0 50%;
 }
 
 .intro-wrap {
@@ -68,7 +77,6 @@ li {
 	height: 100vh;
 	max-height: 100%;
 	overflow: hidden;
-	scroll-snap-align: start;
 }
 
 #intro h1::after {
@@ -79,7 +87,7 @@ li {
 	color: #dddddd;
 }
 
-#Designer {
+#designer {
 	background:
 		linear-gradient(to bottom right, rgba(0, 20, 20, 0.9),
 			rgba(54, 25, 219, 0.7)), url('../img/SFU.JPG');
@@ -87,7 +95,6 @@ li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	scroll-snap-align: start;
 }
 
 .caption-bg {
@@ -103,13 +110,12 @@ li {
 	color: #333333;
 }
 
-#Maker {
+#maker {
 	background-image: linear-gradient(to right, rgba(20, 20, 20,.9) 60%, rgba(20, 20, 20,0)), url('../img/lamp.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	scroll-snap-align: start;
 }
 #Seeker {
 	background-image: url('../img/spatial.jpg');
@@ -117,7 +123,6 @@ li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	scroll-snap-align: start;
 }
 
 

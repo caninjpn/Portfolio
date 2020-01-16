@@ -1,4 +1,5 @@
 window.onload = function() {
+    this.windowCheck();
 	lax.setup() // init
 
 	const updateLax = () => {
@@ -7,7 +8,6 @@ window.onload = function() {
 	}
 
     window.requestAnimationFrame(updateLax)
-    this.windowCheck();
 }
 
 document.getElementById("menu_btn").addEventListener("click", showMenu, false);
@@ -15,6 +15,7 @@ document.getElementById("menu_btn").addEventListener("click", showMenu, false);
 function windowCheck() {
     var h = window.innerHeight;
     $('#intro').css("height", h);
+    $('#menu-wrapper').css("height", h);
     $('#nav').css("height", h);
    $('.row').css("min-height", h);
 }
