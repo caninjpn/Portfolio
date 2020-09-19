@@ -1,0 +1,87 @@
+body{
+    background-color: #dddddd;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrap > div{
+    flex: 1;
+    border: 1px solid #bf0000;
+    
+}
+
+.status{
+    position: fixed;
+    display:block;
+    width: max-content;
+    background-color: #FA8713;
+    border-radius: 150px 30px 150px 150px;
+    top: 20px;
+    left:20px;
+}
+
+.top-layer{
+    z-index: 1000;
+}
+
+.profile-img_container{
+    display:inline-block;
+    max-height:100px;
+    max-width:100px;
+}
+
+.profile-img{
+    height:100%;
+    width: 100%;
+    border-radius: 150px;
+}
+
+.profile-info_container{
+    display:inline-block;
+    margin-left: 10px;
+    margin-right:10px;
+    vertical-align: bottom;
+    color:#ffffff;
+}
+
+.profile-info_container > h4, .profile-info_container > h6{
+    margin:0;
+    padding:0;
+}
+
+.card{
+    position: relative;
+    top: 140px;
+    width: 96%;
+    height: calc(100vh - 140px);
+    margin: 0 8px;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px #dddddd;
+}
+
+.skill-list{
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 687px) {
+    .status{
+        position: static;
+    }
+    .profile-img_container{
+        max-height:70px;
+        max-width:70px;
+    }
+    .profile-info_container{
+        max-height: 60px;
+        vertical-align: top;
+    }
+
+    .card{
+        top: 10px;
+        height: calc(100vh - 24vh);
+    }
+    
+  }
