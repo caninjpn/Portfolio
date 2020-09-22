@@ -1,87 +1,40 @@
 body{
-    background-color: #dddddd;
-}
-.wrap{
-    flex-wrap: wrap;
+    background-color: #303030;
+    color: #959595;
 }
 
-.wrap > div{
-    flex: 1;
-    border: 1px solid #bf0000;
-    
+.header{
+    margin-left: 16px;
+    margin-top: 16px;
 }
 
-.status{
-    position: fixed;
-    display:block;
-    width: max-content;
-    background-color: #FA8713;
-    border-radius: 150px 30px 150px 150px;
-    top: 20px;
-    left:20px;
+.header > h4{
+    font-weight: 300;
 }
 
-.top-layer{
-    z-index: 1000;
+.navbar{
+    position:fixed;
+    bottom: 16px;
+    left: 50%;
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -175px;
 }
 
-.profile-img_container{
-    display:inline-block;
-    max-height:100px;
-    max-width:100px;
+.navbar_ic{
+    width: 50px;
+    height: 50px;
 }
 
-.profile-img{
-    height:100%;
-    width: 100%;
-    border-radius: 150px;
+.navbar_selection{
+    width: 70px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3em;
+    text-shadow: 2px 2px 3px #000000;
 }
-
-.profile-info_container{
-    display:inline-block;
-    margin-left: 10px;
-    margin-right:10px;
-    vertical-align: bottom;
-    color:#ffffff;
-}
-
-.profile-info_container > h4, .profile-info_container > h6{
-    margin:0;
-    padding:0;
-}
-
-.card{
-    position: relative;
-    top: 140px;
-    width: 96%;
-    height: calc(100vh - 140px);
-    margin: 0 8px;
-    padding: 24px;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 4px #dddddd;
-}
-
-.skill-list{
-    display: inline-block;
-}
-
 
 @media only screen and (max-width: 687px) {
-    .status{
-        position: static;
-    }
-    .profile-img_container{
-        max-height:70px;
-        max-width:70px;
-    }
-    .profile-info_container{
-        max-height: 60px;
-        vertical-align: top;
-    }
-
-    .card{
-        top: 10px;
-        height: calc(100vh - 24vh);
-    }
     
   }
